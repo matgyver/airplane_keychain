@@ -127,7 +127,7 @@ U 1 1 58D81C3D
 P 3800 3750
 F 0 "SW1" H 3950 3860 50  0000 C CNN
 F 1 "SW_PUSH" H 3800 3670 50  0000 C CNN
-F 2 "Buttons_Switches_ThroughHole:SW_PUSH-12mm" H 3800 3750 50  0001 C CNN
+F 2 "Buttons_Switches_ThroughHole:SW_PUSH_SMALL" H 3800 3750 50  0001 C CNN
 F 3 "" H 3800 3750 50  0000 C CNN
 	1    3800 3750
 	1    0    0    -1  
@@ -149,7 +149,7 @@ U 1 1 58D828CF
 P 8300 3800
 F 0 "BT1" H 8400 3850 50  0000 L CNN
 F 1 "Battery" H 8400 3750 50  0000 L CNN
-F 2 "Battery_Holders:Keystone_2468_2xAAA" V 8300 3840 50  0001 C CNN
+F 2 "Connectors_JST:JST_PH_B2B-PH-K_02x2.00mm_Straight" V 8300 3840 50  0001 C CNN
 F 3 "" V 8300 3840 50  0000 C CNN
 	1    8300 3800
 	1    0    0    -1  
@@ -160,7 +160,7 @@ U 1 1 58D82980
 P 8300 2600
 F 0 "SW2" H 8300 2700 50  0000 C CNN
 F 1 "SPST" H 8300 2500 50  0000 C CNN
-F 2 "Buttons_Switches_ThroughHole:SW_DIP_x1_W7.62mm_Slide" H 8300 2600 50  0001 C CNN
+F 2 "Buttons_Switches_ThroughHole:SW_Micro_SPST" H 8300 2600 50  0001 C CNN
 F 3 "" H 8300 2600 50  0000 C CNN
 	1    8300 2600
 	0    1    1    0   
@@ -195,8 +195,6 @@ Wire Wire Line
 	7400 2400 7400 2700
 Wire Wire Line
 	8300 3950 8300 4150
-Wire Wire Line
-	3500 3750 2000 3750
 Wire Wire Line
 	4100 3750 7900 3750
 Wire Wire Line
@@ -239,50 +237,143 @@ F 3 "" H 1200 4450 50  0000 C CNN
 	1    1200 4450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2000 1150 4400 1150
-Wire Wire Line
-	4400 1150 4400 1900
-Wire Wire Line
-	4400 1900 4600 1900
-Wire Wire Line
-	2000 1500 4300 1500
-Wire Wire Line
-	4300 1500 4300 2000
-Wire Wire Line
-	4300 2000 4600 2000
 Text Notes 2000 1050 0    60   ~ 0
 Beacon
 Text Notes 2000 1350 0    60   ~ 0
 Tail
-Wire Wire Line
-	2000 1950 4100 1950
-Wire Wire Line
-	4100 1950 4100 2100
-Wire Wire Line
-	4100 2100 4600 2100
-Wire Wire Line
-	2000 2300 4100 2300
-Wire Wire Line
-	4100 2300 4100 2200
-Wire Wire Line
-	4100 2200 4600 2200
-Wire Wire Line
-	2000 2850 4300 2850
-Wire Wire Line
-	4300 2850 4300 2300
-Wire Wire Line
-	4300 2300 4600 2300
-Wire Wire Line
-	2000 3200 4400 3200
-Wire Wire Line
-	4400 3200 4400 2400
-Wire Wire Line
-	4400 2400 4600 2400
 Text Notes 2050 3650 0    60   ~ 0
 Landing/Taxi
 Wire Wire Line
 	7300 1900 8300 1900
 Wire Wire Line
 	8300 1900 8300 2100
+$Comp
+L R R1
+U 1 1 58E07A9A
+P 2550 1150
+F 0 "R1" V 2630 1150 50  0000 C CNN
+F 1 "100" V 2550 1150 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2480 1150 50  0001 C CNN
+F 3 "" H 2550 1150 50  0001 C CNN
+	1    2550 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 58E07B96
+P 2550 1500
+F 0 "R2" V 2630 1500 50  0000 C CNN
+F 1 "100" V 2550 1500 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2480 1500 50  0001 C CNN
+F 3 "" H 2550 1500 50  0001 C CNN
+	1    2550 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 58E07BFF
+P 2550 1950
+F 0 "R3" V 2630 1950 50  0000 C CNN
+F 1 "100" V 2550 1950 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2480 1950 50  0001 C CNN
+F 3 "" H 2550 1950 50  0001 C CNN
+	1    2550 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 58E07C60
+P 2550 2300
+F 0 "R4" V 2630 2300 50  0000 C CNN
+F 1 "100" V 2550 2300 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2480 2300 50  0001 C CNN
+F 3 "" H 2550 2300 50  0001 C CNN
+	1    2550 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 58E07CA3
+P 2550 2850
+F 0 "R5" V 2630 2850 50  0000 C CNN
+F 1 "100" V 2550 2850 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2480 2850 50  0001 C CNN
+F 3 "" H 2550 2850 50  0001 C CNN
+	1    2550 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 58E07CDC
+P 2550 3200
+F 0 "R6" V 2630 3200 50  0000 C CNN
+F 1 "100" V 2550 3200 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2480 3200 50  0001 C CNN
+F 3 "" H 2550 3200 50  0001 C CNN
+	1    2550 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L R R7
+U 1 1 58E07D29
+P 2550 3750
+F 0 "R7" V 2630 3750 50  0000 C CNN
+F 1 "50" V 2550 3750 50  0000 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2480 3750 50  0001 C CNN
+F 3 "" H 2550 3750 50  0001 C CNN
+	1    2550 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 1150 2400 1150
+Wire Wire Line
+	2700 1150 4450 1150
+Wire Wire Line
+	4450 1150 4450 1900
+Wire Wire Line
+	4450 1900 4600 1900
+Wire Wire Line
+	2000 1500 2400 1500
+Wire Wire Line
+	2700 1500 4350 1500
+Wire Wire Line
+	4350 1500 4350 2000
+Wire Wire Line
+	4350 2000 4600 2000
+Wire Wire Line
+	2000 1950 2400 1950
+Wire Wire Line
+	2700 1950 4250 1950
+Wire Wire Line
+	4250 1950 4250 2100
+Wire Wire Line
+	4250 2100 4600 2100
+Wire Wire Line
+	2000 2300 2400 2300
+Wire Wire Line
+	2700 2300 4100 2300
+Wire Wire Line
+	4100 2300 4100 2200
+Wire Wire Line
+	4100 2200 4600 2200
+Wire Wire Line
+	2000 2850 2400 2850
+Wire Wire Line
+	2700 2850 4200 2850
+Wire Wire Line
+	4200 2850 4200 2300
+Wire Wire Line
+	4200 2300 4600 2300
+Wire Wire Line
+	2000 3200 2400 3200
+Wire Wire Line
+	2700 3200 4400 3200
+Wire Wire Line
+	4400 3200 4400 2400
+Wire Wire Line
+	4400 2400 4600 2400
+Wire Wire Line
+	2000 3750 2400 3750
+Wire Wire Line
+	2700 3750 3500 3750
 $EndSCHEMATC
