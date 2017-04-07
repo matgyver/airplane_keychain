@@ -127,7 +127,7 @@ U 1 1 58D81C3D
 P 3800 3750
 F 0 "SW1" H 3950 3860 50  0000 C CNN
 F 1 "SW_PUSH" H 3800 3670 50  0000 C CNN
-F 2 "Buttons_Switches_ThroughHole:SW_PUSH_SMALL" H 3800 3750 50  0001 C CNN
+F 2 "Buttons_Switches_ThroughHole:SW_PUSH_6mm_h9.5mm" H 3800 3750 50  0001 C CNN
 F 3 "" H 3800 3750 50  0000 C CNN
 	1    3800 3750
 	1    0    0    -1  
@@ -141,17 +141,6 @@ F 1 "ATTINY85-P" H 6950 1750 50  0000 C CNN
 F 2 "Housings_DIP:DIP-8_W7.62mm_Socket" H 6950 2150 50  0000 C CIN
 F 3 "" H 5950 2150 50  0000 C CNN
 	1    5950 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Battery-RESCUE-airplane-keychain BT1
-U 1 1 58D828CF
-P 8300 3800
-F 0 "BT1" H 8400 3850 50  0000 L CNN
-F 1 "Battery" H 8400 3750 50  0000 L CNN
-F 2 "Connectors_JST:JST_PH_B2B-PH-K_02x2.00mm_Straight" V 8300 3840 50  0001 C CNN
-F 3 "" V 8300 3840 50  0000 C CNN
-	1    8300 3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -200,7 +189,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 3750 7900 3400
 Wire Wire Line
-	7900 3400 8300 3400
+	7900 3400 8850 3400
 Connection ~ 8300 3400
 Wire Wire Line
 	1600 1150 1200 1150
@@ -253,7 +242,7 @@ U 1 1 58E07A9A
 P 2550 1150
 F 0 "R1" V 2630 1150 50  0000 C CNN
 F 1 "100" V 2550 1150 50  0000 C CNN
-F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2480 1150 50  0001 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical" V 2480 1150 50  0001 C CNN
 F 3 "" H 2550 1150 50  0001 C CNN
 	1    2550 1150
 	0    1    1    0   
@@ -264,7 +253,7 @@ U 1 1 58E07B96
 P 2550 1500
 F 0 "R2" V 2630 1500 50  0000 C CNN
 F 1 "100" V 2550 1500 50  0000 C CNN
-F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2480 1500 50  0001 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical" V 2480 1500 50  0001 C CNN
 F 3 "" H 2550 1500 50  0001 C CNN
 	1    2550 1500
 	0    1    1    0   
@@ -275,7 +264,7 @@ U 1 1 58E07BFF
 P 2550 1950
 F 0 "R3" V 2630 1950 50  0000 C CNN
 F 1 "100" V 2550 1950 50  0000 C CNN
-F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2480 1950 50  0001 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical" V 2480 1950 50  0001 C CNN
 F 3 "" H 2550 1950 50  0001 C CNN
 	1    2550 1950
 	0    1    1    0   
@@ -286,7 +275,7 @@ U 1 1 58E07C60
 P 2550 2300
 F 0 "R4" V 2630 2300 50  0000 C CNN
 F 1 "100" V 2550 2300 50  0000 C CNN
-F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2480 2300 50  0001 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical" V 2480 2300 50  0001 C CNN
 F 3 "" H 2550 2300 50  0001 C CNN
 	1    2550 2300
 	0    1    1    0   
@@ -297,7 +286,7 @@ U 1 1 58E07CA3
 P 2550 2850
 F 0 "R5" V 2630 2850 50  0000 C CNN
 F 1 "100" V 2550 2850 50  0000 C CNN
-F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2480 2850 50  0001 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical" V 2480 2850 50  0001 C CNN
 F 3 "" H 2550 2850 50  0001 C CNN
 	1    2550 2850
 	0    1    1    0   
@@ -308,7 +297,7 @@ U 1 1 58E07CDC
 P 2550 3200
 F 0 "R6" V 2630 3200 50  0000 C CNN
 F 1 "100" V 2550 3200 50  0000 C CNN
-F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2480 3200 50  0001 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical" V 2480 3200 50  0001 C CNN
 F 3 "" H 2550 3200 50  0001 C CNN
 	1    2550 3200
 	0    1    1    0   
@@ -319,7 +308,7 @@ U 1 1 58E07D29
 P 2550 3750
 F 0 "R7" V 2630 3750 50  0000 C CNN
 F 1 "50" V 2550 3750 50  0000 C CNN
-F 2 "Resistors_ThroughHole:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 2480 3750 50  0001 C CNN
+F 2 "Resistors_ThroughHole:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical" V 2480 3750 50  0001 C CNN
 F 3 "" H 2550 3750 50  0001 C CNN
 	1    2550 3750
 	0    1    1    0   
@@ -376,4 +365,33 @@ Wire Wire Line
 	2000 3750 2400 3750
 Wire Wire Line
 	2700 3750 3500 3750
+$Comp
+L Battery_Cell BT2
+U 1 1 58E71486
+P 8850 3850
+F 0 "BT2" H 8950 3950 50  0000 L CNN
+F 1 "Battery_Cell" H 8950 3850 50  0000 L CNN
+F 2 "Battery_Holders:Keystone_1058_1x2032-CoinCell" V 8850 3910 50  0001 C CNN
+F 3 "" V 8850 3910 50  0001 C CNN
+	1    8850 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery_Cell BT1
+U 1 1 58E7150B
+P 8300 3850
+F 0 "BT1" H 8400 3950 50  0000 L CNN
+F 1 "Battery_Cell" H 8400 3850 50  0000 L CNN
+F 2 "Battery_Holders:Keystone_1058_1x2032-CoinCell" V 8300 3910 50  0001 C CNN
+F 3 "" V 8300 3910 50  0001 C CNN
+	1    8300 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 3400 8850 3650
+Wire Wire Line
+	8850 3950 8850 4050
+Wire Wire Line
+	8850 4050 8300 4050
+Connection ~ 8300 4050
 $EndSCHEMATC
