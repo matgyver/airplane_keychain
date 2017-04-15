@@ -84,12 +84,16 @@
     )
   )
   (placement
+    (component Mounting_Holes:MountingHole_2.7mm
+      (place CHAIN2 84328 -83058 front 0 (PN MountingHole_2.7mm))
+      (place CHAIN1 85344 -108712 front 0 (PN MountingHole_2.7mm))
+    )
     (component LEDs:LED_D5.0mm
-      (place D1 90424 -96520 front 0 (PN LED))
+      (place D1 90932 -97790 front 90 (PN LED))
       (place D7 174498 -96266 front 270 (PN LED))
     )
     (component LEDs:LED_1206
-      (place D2 80772 -96266 front 90 (PN LED))
+      (place D2 80772 -96520 front 90 (PN LED))
       (place D5 143002 -152146 front 0 (PN LED))
       (place D6 142240 -40386 front 180 (PN LED))
     )
@@ -105,25 +109,36 @@
       (place IC1 144018 -92710 front 270 (PN "ATTINY85-P"))
     )
     (component Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal
-      (place R1 118618 -96266 front 0 (PN 100))
-      (place R2 98298 -96266 front 0 (PN 100))
-      (place R3 140970 -141732 front 0 (PN 100))
-      (place R4 140970 -47498 front 0 (PN 100))
+      (place R1 130048 -96266 front 180 (PN 100))
+      (place R2 112522 -96266 front 180 (PN 100))
+      (place R3 140970 -140970 front 0 (PN 100))
+      (place R4 140970 -46736 front 0 (PN 100))
       (place R5 153670 -146304 front 180 (PN 100))
-      (place R6 140970 -52832 front 0 (PN 100))
+      (place R6 153416 -53340 front 180 (PN 100))
       (place R7 155448 -91694 front 270 (PN 50))
     )
     (component Buttons_Switches_THT:SW_PUSH_6mm
       (place SW1 161798 -95250 front 0 (PN SW_PUSH))
     )
     (component Buttons_Switches_THT:SW_Micro_SPST
-      (place SW2 149606 -96774 front 270 (PN SPST))
-    )
-    (component Mounting_Holes:MountingHole_2.5mm_Pad_Via
-      (place REF** 85852 -96520 front 0 (PN MountingHole_2.5mm_Pad_Via))
+      (place SW2 149860 -97536 front 90 (PN SPST))
     )
   )
   (library
+    (image Mounting_Holes:MountingHole_2.7mm
+      (outline (path signal 150  2700 0  2567.85 -834.346  2184.35 -1587.02  1587.02 -2184.35
+            834.346 -2567.85  0 -2700  -834.346 -2567.85  -1587.02 -2184.35
+            -2184.35 -1587.02  -2567.85 -834.346  -2700 0  -2567.85 834.346
+            -2184.35 1587.02  -1587.02 2184.35  -834.346 2567.85  0 2700
+            834.346 2567.85  1587.02 2184.35  2184.35 1587.02  2567.85 834.346))
+      (outline (path signal 50  2950 0  2805.62 -911.6  2386.6 -1733.97  1733.97 -2386.6
+            911.6 -2805.62  0 -2950  -911.6 -2805.62  -1733.97 -2386.6  -2386.6 -1733.97
+            -2805.62 -911.6  -2950 0  -2805.62 911.6  -2386.6 1733.97  -1733.97 2386.6
+            -911.6 2805.62  0 2950  911.6 2805.62  1733.97 2386.6  2386.6 1733.97
+            2805.62 911.6))
+      (keepout "" (circle F.Cu 2700))
+      (keepout "" (circle B.Cu 2700))
+    )
     (image LEDs:LED_D5.0mm
       (outline (path signal 100  3770 0  3647.64 -772.542  3292.54 -1469.46  2739.46 -2022.54
             2042.54 -2377.64  1270 -2500  497.458 -2377.64  -199.463 -2022.54
@@ -308,27 +323,6 @@
       (pin Round[A]Pad_1397_um 2 0 0)
       (pin Round[A]Pad_1397_um 3 2540 0)
     )
-    (image Mounting_Holes:MountingHole_2.5mm_Pad_Via
-      (outline (path signal 150  2500 0  2377.64 -772.542  2022.54 -1469.46  1469.46 -2022.54
-            772.542 -2377.64  0 -2500  -772.542 -2377.64  -1469.46 -2022.54
-            -2022.54 -1469.46  -2377.64 -772.542  -2500 0  -2377.64 772.542
-            -2022.54 1469.46  -1469.46 2022.54  -772.542 2377.64  0 2500
-            772.542 2377.64  1469.46 2022.54  2022.54 1469.46  2377.64 772.542))
-      (outline (path signal 50  2750 0  2615.41 -849.797  2224.8 -1616.41  1616.41 -2224.8
-            849.797 -2615.41  0 -2750  -849.797 -2615.41  -1616.41 -2224.8
-            -2224.8 -1616.41  -2615.41 -849.797  -2750 0  -2615.41 849.797
-            -2224.8 1616.41  -1616.41 2224.8  -849.797 2615.41  0 2750  849.797 2615.41
-            1616.41 2224.8  2224.8 1616.41  2615.41 849.797))
-      (pin Round[A]Pad_5000_um 1 0 0)
-      (pin Round[A]Pad_600_um @1 1875 0)
-      (pin Round[A]Pad_600_um @2 1325.83 -1325.83)
-      (pin Round[A]Pad_600_um @3 0 -1875)
-      (pin Round[A]Pad_600_um @4 -1325.83 -1325.83)
-      (pin Round[A]Pad_600_um @5 -1875 0)
-      (pin Round[A]Pad_600_um @6 -1325.83 1325.83)
-      (pin Round[A]Pad_600_um @7 0 1875)
-      (pin Round[A]Pad_600_um @8 1325.83 1325.83)
-    )
     (padstack Round[A]Pad_1397_um
       (shape (circle F.Cu 1397))
       (shape (circle B.Cu 1397))
@@ -347,16 +341,6 @@
     (padstack Round[A]Pad_2000_um
       (shape (circle F.Cu 2000))
       (shape (circle B.Cu 2000))
-      (attach off)
-    )
-    (padstack Round[A]Pad_5000_um
-      (shape (circle F.Cu 5000))
-      (shape (circle B.Cu 5000))
-      (attach off)
-    )
-    (padstack Round[A]Pad_600_um
-      (shape (circle F.Cu 600))
-      (shape (circle B.Cu 600))
       (attach off)
     )
     (padstack Oval[A]Pad_1600x1600_um
