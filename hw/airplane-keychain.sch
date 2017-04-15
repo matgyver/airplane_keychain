@@ -36,11 +36,11 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Airplane Keychain"
-Date "2017-03-26"
+Date "2017-04-15"
 Rev "1"
 Comp ""
 Comment1 "Matthew E. Nelson"
-Comment2 ""
+Comment2 "High Wing PCB design"
 Comment3 ""
 Comment4 ""
 $EndDescr

@@ -1,0 +1,1 @@
+projection(cut=false) translate([0,0,15]) rotate ([0,0,0]) import("high_wing.stl");
