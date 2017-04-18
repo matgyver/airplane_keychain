@@ -1028,10 +1028,10 @@
   (gr_text "Rev A" (at 85.598 91.186) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "Airplane Kechain" (at 142.494 101.854) (layer F.SilkS)
+  (gr_text "Airplane Kechain" (at 142.494 87.376) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text N8045W (at 122.682 100.584) (layer F.SilkS)
+  (gr_text N8045W (at 117.856 100.076) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
 
