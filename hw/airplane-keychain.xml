@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>C:/Users/Matthew/Documents/GitHub/airplane_keychain/hw/airplane-keychain.sch</source>
-    <date>4/17/2017 10:58:22 PM</date>
+    <date>4/26/2017 11:51:29 PM</date>
     <tool>Eeschema 4.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -242,11 +242,11 @@
     </libpart>
   </libparts>
   <libraries>
-    <library logical="airplane-keychain-rescue">
-      <uri>C:\Users\Matthew\Documents\GitHub\airplane_keychain\hw\airplane-keychain-rescue.lib</uri>
-    </library>
     <library logical="device">
       <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+    </library>
+    <library logical="airplane-keychain-rescue">
+      <uri>C:\Users\Matthew\Documents\GitHub\airplane_keychain\hw\airplane-keychain-rescue.lib</uri>
     </library>
     <library logical="airplane-keychain-cache">
       <uri>C:\Users\Matthew\Documents\GitHub\airplane_keychain\hw\airplane-keychain-cache.lib</uri>
