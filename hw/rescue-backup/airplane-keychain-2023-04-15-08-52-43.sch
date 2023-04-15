@@ -1,0 +1,422 @@
+EESchema Schematic File Version 2
+LIBS:airplane-keychain-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:airplane-keychain-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Airplane Keychain"
+Date "2017-04-15"
+Rev "1"
+Comp ""
+Comment1 "Matthew E. Nelson"
+Comment2 "High Wing PCB design"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED-RESCUE-airplane-keychain D1
+U 1 1 58D8009C
+P 2200 2000
+F 0 "D1" H 2200 2100 50  0000 C CNN
+F 1 "LED" H 2200 1900 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 2200 2000 50  0001 C CNN
+F 3 "" H 2200 2000 50  0000 C CNN
+	1    2200 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED-RESCUE-airplane-keychain D2
+U 1 1 58D80133
+P 2200 2350
+F 0 "D2" H 2200 2450 50  0000 C CNN
+F 1 "LED" H 2200 2250 50  0000 C CNN
+F 2 "LEDs:LED_1206" H 2200 2350 50  0001 C CNN
+F 3 "" H 2200 2350 50  0000 C CNN
+	1    2200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED-RESCUE-airplane-keychain D3
+U 1 1 58D8018C
+P 2200 2800
+F 0 "D3" H 2200 2900 50  0000 C CNN
+F 1 "LED" H 2200 2700 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm" H 2200 2800 50  0001 C CNN
+F 3 "" H 2200 2800 50  0000 C CNN
+	1    2200 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED-RESCUE-airplane-keychain D4
+U 1 1 58D8023B
+P 2200 3150
+F 0 "D4" H 2200 3250 50  0000 C CNN
+F 1 "LED" H 2200 3050 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm" H 2200 3150 50  0001 C CNN
+F 3 "" H 2200 3150 50  0000 C CNN
+	1    2200 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED-RESCUE-airplane-keychain D5
+U 1 1 58D8036C
+P 2200 3700
+F 0 "D5" H 2200 3800 50  0000 C CNN
+F 1 "LED" H 2200 3600 50  0000 C CNN
+F 2 "LEDs:LED_1206" H 2200 3700 50  0001 C CNN
+F 3 "" H 2200 3700 50  0000 C CNN
+	1    2200 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED-RESCUE-airplane-keychain D6
+U 1 1 58D80AA4
+P 2200 4050
+F 0 "D6" H 2200 4150 50  0000 C CNN
+F 1 "LED" H 2200 3950 50  0000 C CNN
+F 2 "LEDs:LED_1206" H 2200 4050 50  0001 C CNN
+F 3 "" H 2200 4050 50  0000 C CNN
+	1    2200 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED-RESCUE-airplane-keychain D7
+U 1 1 58D8158B
+P 2200 4600
+F 0 "D7" H 2200 4700 50  0000 C CNN
+F 1 "LED" H 2200 4500 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm" H 2200 4600 50  0001 C CNN
+F 3 "" H 2200 4600 50  0000 C CNN
+	1    2200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 58D81C3D
+P 4200 4600
+F 0 "SW1" H 4350 4710 50  0000 C CNN
+F 1 "SW_PUSH" H 4200 4520 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 4200 4600 50  0001 C CNN
+F 3 "" H 4200 4600 50  0000 C CNN
+	1    4200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L ATTINY85-P IC1
+U 1 1 58D827D7
+P 6350 3000
+F 0 "IC1" H 5200 3400 50  0000 C CNN
+F 1 "ATTINY85-P" H 7350 2600 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 7350 3000 50  0000 C CIN
+F 3 "" H 6350 3000 50  0000 C CNN
+	1    6350 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPST SW2
+U 1 1 58D82980
+P 8700 3450
+F 0 "SW2" H 8700 3550 50  0000 C CNN
+F 1 "SPST" H 8700 3350 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_Micro_SPST" H 8700 3450 50  0001 C CNN
+F 3 "" H 8700 3450 50  0000 C CNN
+	1    8700 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 58D82AED
+P 7800 3550
+F 0 "#PWR01" H 7800 3300 50  0001 C CNN
+F 1 "GND" H 7800 3400 50  0000 C CNN
+F 2 "" H 7800 3550 50  0000 C CNN
+F 3 "" H 7800 3550 50  0000 C CNN
+	1    7800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 58D82B27
+P 8700 5000
+F 0 "#PWR02" H 8700 4750 50  0001 C CNN
+F 1 "GND" H 8700 4850 50  0000 C CNN
+F 2 "" H 8700 5000 50  0000 C CNN
+F 3 "" H 8700 5000 50  0000 C CNN
+	1    8700 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3950 8700 4500
+Wire Wire Line
+	7700 3250 7800 3250
+Wire Wire Line
+	7800 3250 7800 3550
+Wire Wire Line
+	8700 4800 8700 5000
+Wire Wire Line
+	4500 4600 8300 4600
+Wire Wire Line
+	8300 4600 8300 4250
+Wire Wire Line
+	8300 4250 9250 4250
+Connection ~ 8700 4250
+Wire Wire Line
+	2000 2000 1600 2000
+Wire Wire Line
+	1600 1350 1600 5300
+Wire Wire Line
+	2000 2350 1600 2350
+Connection ~ 1600 2350
+Wire Wire Line
+	2000 2800 1600 2800
+Connection ~ 1600 2800
+Wire Wire Line
+	2000 3150 1600 3150
+Wire Wire Line
+	1600 3150 1600 3100
+Connection ~ 1600 3100
+Wire Wire Line
+	2000 3700 1600 3700
+Connection ~ 1600 3700
+Wire Wire Line
+	2000 4050 1600 4050
+Connection ~ 1600 4050
+Wire Wire Line
+	2000 4600 1600 4600
+Connection ~ 1600 4600
+$Comp
+L GND #PWR03
+U 1 1 58D83834
+P 1600 5300
+F 0 "#PWR03" H 1600 5050 50  0001 C CNN
+F 1 "GND" H 1600 5150 50  0000 C CNN
+F 2 "" H 1600 5300 50  0000 C CNN
+F 3 "" H 1600 5300 50  0000 C CNN
+	1    1600 5300
+	1    0    0    -1  
+$EndComp
+Text Notes 2400 1900 0    60   ~ 0
+Beacon
+Text Notes 2400 2200 0    60   ~ 0
+Tail
+Text Notes 2450 4500 0    60   ~ 0
+Landing/Taxi
+Wire Wire Line
+	7700 2750 8700 2750
+Wire Wire Line
+	8700 2750 8700 2950
+$Comp
+L R R1
+U 1 1 58E07A9A
+P 2950 2000
+F 0 "R1" V 3030 2000 50  0000 C CNN
+F 1 "100" V 2950 2000 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 2880 2000 50  0001 C CNN
+F 3 "" H 2950 2000 50  0001 C CNN
+	1    2950 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 58E07B96
+P 2950 2350
+F 0 "R2" V 3030 2350 50  0000 C CNN
+F 1 "100" V 2950 2350 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 2880 2350 50  0001 C CNN
+F 3 "" H 2950 2350 50  0001 C CNN
+	1    2950 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 58E07BFF
+P 2950 2800
+F 0 "R3" V 3030 2800 50  0000 C CNN
+F 1 "100" V 2950 2800 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 2880 2800 50  0001 C CNN
+F 3 "" H 2950 2800 50  0001 C CNN
+	1    2950 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 58E07C60
+P 2950 3150
+F 0 "R4" V 3030 3150 50  0000 C CNN
+F 1 "100" V 2950 3150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 2880 3150 50  0001 C CNN
+F 3 "" H 2950 3150 50  0001 C CNN
+	1    2950 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 58E07D29
+P 2950 4600
+F 0 "R5" V 3030 4600 50  0000 C CNN
+F 1 "50" V 2950 4600 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 2880 4600 50  0001 C CNN
+F 3 "" H 2950 4600 50  0001 C CNN
+	1    2950 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 2000 2800 2000
+Wire Wire Line
+	3100 2000 4850 2000
+Wire Wire Line
+	4850 2000 4850 2750
+Wire Wire Line
+	4850 2750 5000 2750
+Wire Wire Line
+	2400 2350 2800 2350
+Wire Wire Line
+	3100 2350 4750 2350
+Wire Wire Line
+	4750 2350 4750 2850
+Wire Wire Line
+	4750 2850 5000 2850
+Wire Wire Line
+	2400 2800 2800 2800
+Wire Wire Line
+	3100 2800 4650 2800
+Wire Wire Line
+	4650 2800 4650 2950
+Wire Wire Line
+	4650 2950 5000 2950
+Wire Wire Line
+	2400 3150 2800 3150
+Wire Wire Line
+	3100 3150 4500 3150
+Wire Wire Line
+	4500 3150 4500 3050
+Wire Wire Line
+	4500 3050 5000 3050
+Wire Wire Line
+	2400 4600 2800 4600
+Wire Wire Line
+	3100 4600 3900 4600
+$Comp
+L Battery_Cell BT2
+U 1 1 58E71486
+P 9250 4700
+F 0 "BT2" H 9350 4800 50  0000 L CNN
+F 1 "Battery_Cell" H 9350 4700 50  0000 L CNN
+F 2 "Battery_Holders:Keystone_1058_1x2032-CoinCell" V 9250 4760 50  0001 C CNN
+F 3 "" V 9250 4760 50  0001 C CNN
+	1    9250 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery_Cell BT1
+U 1 1 58E7150B
+P 8700 4700
+F 0 "BT1" H 8800 4800 50  0000 L CNN
+F 1 "Battery_Cell" H 8800 4700 50  0000 L CNN
+F 2 "Battery_Holders:Keystone_1058_1x2032-CoinCell" V 8700 4760 50  0001 C CNN
+F 3 "" V 8700 4760 50  0001 C CNN
+	1    8700 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 4250 9250 4500
+Wire Wire Line
+	9250 4800 9250 4900
+Wire Wire Line
+	9250 4900 8700 4900
+Connection ~ 8700 4900
+Wire Wire Line
+	2400 3700 4650 3700
+Wire Wire Line
+	4650 3150 4650 4050
+Wire Wire Line
+	4650 3150 5000 3150
+Wire Wire Line
+	4650 4050 2400 4050
+Connection ~ 4650 3700
+Text Notes 2500 3900 0    60   ~ 0
+Strobe Lights
+$Comp
+L CONN_01X03_MALE J1
+U 1 1 59063ADD
+P 1900 1250
+F 0 "J1" H 1900 1525 50  0000 C CNN
+F 1 "CONN_01X03_MALE" H 1925 975 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 1900 1450 50  0001 C CNN
+F 3 "" H 1900 1450 50  0001 C CNN
+	1    1900 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1450 2500 1450
+Wire Wire Line
+	2500 1450 2500 2000
+Connection ~ 2500 2000
+Wire Wire Line
+	2200 1050 2700 1050
+Wire Wire Line
+	2700 1050 2700 2350
+Connection ~ 2700 2350
+Wire Wire Line
+	2200 1250 2300 1250
+Wire Wire Line
+	2300 1250 2300 1350
+Wire Wire Line
+	2300 1350 1600 1350
+Connection ~ 1600 2000
+$Comp
+L R R6
+U 1 1 590667E2
+P 6350 4000
+F 0 "R6" V 6430 4000 50  0000 C CNN
+F 1 "10k" V 6350 4000 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 6280 4000 50  0001 C CNN
+F 3 "" H 6350 4000 50  0001 C CNN
+	1    6350 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 3250 4900 3250
+Wire Wire Line
+	4900 3250 4900 4000
+Wire Wire Line
+	4900 4000 6200 4000
+Wire Wire Line
+	6500 4000 8150 4000
+Wire Wire Line
+	8150 4000 8150 2750
+Connection ~ 8150 2750
+Text Notes 2250 950  0    60   ~ 0
+Optional Tail Header
+$EndSCHEMATC
