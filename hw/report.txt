@@ -1,0 +1,32 @@
+Info: Backing up file '/Users/mnelson/Documents/GitHub/airplane_keychain/hw/sym-lib-table' to '/Users/mnelson/Documents/GitHub/airplane_keychain/hw/rescue-backup/sym-lib-table-2023-04-13-14-30-44'.
+Info: Backing up file '/Users/mnelson/Documents/GitHub/airplane_keychain/hw/airplane-keychain.sch' to '/Users/mnelson/Documents/GitHub/airplane_keychain/hw/rescue-backup/airplane-keychain-2023-04-13-14-30-44.sch'.
+Info: Backing up file '/Users/mnelson/Documents/GitHub/airplane_keychain/hw/airplane-keychain.kicad_pro' to '/Users/mnelson/Documents/GitHub/airplane_keychain/hw/rescue-backup/airplane-keychain-2023-04-13-14-30-44.kicad_pro'.
+Info: Backing up file '/Users/mnelson/Documents/GitHub/airplane_keychain/hw/airplane-keychain-cache.lib' to '/Users/mnelson/Documents/GitHub/airplane_keychain/hw/rescue-backup/airplane-keychain-cache-2023-04-13-14-30-44.lib'.
+Info: Backing up file '/Users/mnelson/Documents/GitHub/airplane_keychain/hw/airplane-keychain-rescue.lib' to '/Users/mnelson/Documents/GitHub/airplane_keychain/hw/rescue-backup/airplane-keychain-rescue-2023-04-13-14-30-44.lib'.
+Info: Backing up file '/Users/mnelson/Documents/GitHub/airplane_keychain/hw/airplane-keychain-rescue.dcm' to '/Users/mnelson/Documents/GitHub/airplane_keychain/hw/rescue-backup/airplane-keychain-rescue-2023-04-13-14-30-44.dcm'.
+Info: Adding library 'airplane-keychain-rescue', file '${KIPRJMOD}/airplane-keychain-rescue.lib' to project symbol library table.
+Symbol LED-RESCUE-airplane-keychain mapped to symbol library 'airplane-keychain-rescue'.
+Symbol LED-RESCUE-airplane-keychain mapped to symbol library 'airplane-keychain-rescue'.
+Symbol LED-RESCUE-airplane-keychain mapped to symbol library 'airplane-keychain-rescue'.
+Symbol LED-RESCUE-airplane-keychain mapped to symbol library 'airplane-keychain-rescue'.
+Symbol LED-RESCUE-airplane-keychain mapped to symbol library 'airplane-keychain-rescue'.
+Symbol LED-RESCUE-airplane-keychain mapped to symbol library 'airplane-keychain-rescue'.
+Symbol GND mapped to symbol library 'airplane-keychain-rescue'.
+Symbol LED-RESCUE-airplane-keychain mapped to symbol library 'airplane-keychain-rescue'.
+Symbol CONN_01X03_MALE mapped to symbol library 'airplane-keychain-rescue'.
+Symbol R mapped to symbol library 'airplane-keychain-rescue'.
+Symbol R mapped to symbol library 'airplane-keychain-rescue'.
+Symbol R mapped to symbol library 'airplane-keychain-rescue'.
+Symbol R mapped to symbol library 'airplane-keychain-rescue'.
+Symbol SW_PUSH mapped to symbol library 'airplane-keychain-rescue'.
+Symbol R mapped to symbol library 'airplane-keychain-rescue'.
+Symbol SPST mapped to symbol library 'airplane-keychain-rescue'.
+Symbol Battery_Cell mapped to symbol library 'airplane-keychain-rescue'.
+Symbol GND mapped to symbol library 'airplane-keychain-rescue'.
+Symbol Battery_Cell mapped to symbol library 'airplane-keychain-rescue'.
+Symbol GND mapped to symbol library 'airplane-keychain-rescue'.
+Symbol ATTINY85-P mapped to symbol library 'airplane-keychain-rescue'.
+Symbol R mapped to symbol library 'airplane-keychain-rescue'.
+Info: Symbol library table mapping complete!
+Info: Created project symbol library table.
+
