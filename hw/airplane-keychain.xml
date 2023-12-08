@@ -1,182 +1,279 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<export version="D">
+<export version="E">
   <design>
-    <source>C:/Users/Matthew/Documents/GitHub/airplane_keychain/hw/airplane-keychain.sch</source>
-    <date>4/26/2017 11:51:29 PM</date>
-    <tool>Eeschema 4.0.6</tool>
+    <source>/Users/matgyver/GitHub/airplane_keychain/hw/airplane-keychain.kicad_sch</source>
+    <date>2023 December 08, Friday 11:50:08</date>
+    <tool>Eeschema 7.0.7</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>Airplane Keychain</title>
-        <company/>
-        <rev>1</rev>
-        <date>2017-04-15</date>
-        <source>airplane-keychain.sch</source>
+        <title>ISGC Keychain</title>
+        <company>Make to Innovate</company>
+        <rev>C</rev>
+        <date>2023-12-07</date>
+        <source>airplane-keychain.kicad_sch</source>
         <comment number="1" value="Matthew E. Nelson"/>
-        <comment number="2" value="High Wing PCB design"/>
+        <comment number="2" value="ISGC Badge"/>
         <comment number="3" value=""/>
         <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
       </title_block>
     </sheet>
   </design>
   <components>
-    <comp ref="D1">
-      <value>LED</value>
-      <footprint>LEDs:LED_D5.0mm</footprint>
-      <libsource lib="airplane-keychain-rescue" part="LED-RESCUE-airplane-keychain"/>
+    <comp ref="BT1">
+      <value>Battery_Cell</value>
+      <footprint>Battery:BatteryHolder_Keystone_1058_1x2032</footprint>
+      <libsource lib="airplane-keychain-rescue" part="Battery_Cell" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>58D8009C</tstamp>
-    </comp>
-    <comp ref="D2">
-      <value>LED</value>
-      <footprint>LEDs:LED_1206</footprint>
-      <libsource lib="airplane-keychain-rescue" part="LED-RESCUE-airplane-keychain"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58D80133</tstamp>
-    </comp>
-    <comp ref="D3">
-      <value>LED</value>
-      <footprint>LEDs:LED_D3.0mm</footprint>
-      <libsource lib="airplane-keychain-rescue" part="LED-RESCUE-airplane-keychain"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58D8018C</tstamp>
-    </comp>
-    <comp ref="D4">
-      <value>LED</value>
-      <footprint>LEDs:LED_D3.0mm</footprint>
-      <libsource lib="airplane-keychain-rescue" part="LED-RESCUE-airplane-keychain"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58D8023B</tstamp>
-    </comp>
-    <comp ref="D5">
-      <value>LED</value>
-      <footprint>LEDs:LED_1206</footprint>
-      <libsource lib="airplane-keychain-rescue" part="LED-RESCUE-airplane-keychain"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58D8036C</tstamp>
-    </comp>
-    <comp ref="D6">
-      <value>LED</value>
-      <footprint>LEDs:LED_1206</footprint>
-      <libsource lib="airplane-keychain-rescue" part="LED-RESCUE-airplane-keychain"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58D80AA4</tstamp>
-    </comp>
-    <comp ref="D7">
-      <value>LED</value>
-      <footprint>LEDs:LED_D5.0mm</footprint>
-      <libsource lib="airplane-keychain-rescue" part="LED-RESCUE-airplane-keychain"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58D8158B</tstamp>
-    </comp>
-    <comp ref="SW1">
-      <value>SW_PUSH</value>
-      <footprint>Buttons_Switches_THT:SW_PUSH_6mm</footprint>
-      <libsource lib="airplane-keychain-cache" part="SW_PUSH"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58D81C3D</tstamp>
-    </comp>
-    <comp ref="IC1">
-      <value>ATTINY85-P</value>
-      <footprint>Housings_DIP:DIP-8_W7.62mm</footprint>
-      <libsource lib="airplane-keychain-cache" part="ATTINY85-P"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58D827D7</tstamp>
-    </comp>
-    <comp ref="SW2">
-      <value>SPST</value>
-      <footprint>Buttons_Switches_THT:SW_Micro_SPST</footprint>
-      <libsource lib="airplane-keychain-cache" part="SPST"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58D82980</tstamp>
-    </comp>
-    <comp ref="R1">
-      <value>100</value>
-      <footprint>Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal</footprint>
-      <libsource lib="device" part="R"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58E07A9A</tstamp>
-    </comp>
-    <comp ref="R2">
-      <value>100</value>
-      <footprint>Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal</footprint>
-      <libsource lib="device" part="R"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58E07B96</tstamp>
-    </comp>
-    <comp ref="R3">
-      <value>100</value>
-      <footprint>Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal</footprint>
-      <libsource lib="device" part="R"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58E07BFF</tstamp>
-    </comp>
-    <comp ref="R4">
-      <value>100</value>
-      <footprint>Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal</footprint>
-      <libsource lib="device" part="R"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58E07C60</tstamp>
-    </comp>
-    <comp ref="R5">
-      <value>100</value>
-      <footprint>Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal</footprint>
-      <libsource lib="device" part="R"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58E07CA3</tstamp>
-    </comp>
-    <comp ref="R6">
-      <value>100</value>
-      <footprint>Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal</footprint>
-      <libsource lib="device" part="R"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58E07CDC</tstamp>
-    </comp>
-    <comp ref="R7">
-      <value>50</value>
-      <footprint>Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal</footprint>
-      <libsource lib="device" part="R"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>58E07D29</tstamp>
+      <tstamps>00000000-0000-0000-0000-000058e7150b</tstamps>
     </comp>
     <comp ref="BT2">
       <value>Battery_Cell</value>
-      <footprint>Battery_Holders:Keystone_1058_1x2032-CoinCell</footprint>
-      <libsource lib="device" part="Battery_Cell"/>
+      <footprint>Battery:BatteryHolder_Keystone_1058_1x2032</footprint>
+      <libsource lib="airplane-keychain-rescue" part="Battery_Cell" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>58E71486</tstamp>
+      <tstamps>00000000-0000-0000-0000-000058e71486</tstamps>
     </comp>
-    <comp ref="BT1">
-      <value>Battery_Cell</value>
-      <footprint>Battery_Holders:Keystone_1058_1x2032-CoinCell</footprint>
-      <libsource lib="device" part="Battery_Cell"/>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <libsource lib="airplane-keychain-rescue" part="LED-RESCUE-airplane-keychain" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>58E7150B</tstamp>
+      <tstamps>00000000-0000-0000-0000-000058d8009c</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <libsource lib="airplane-keychain-rescue" part="LED-RESCUE-airplane-keychain" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000058d80133</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <libsource lib="airplane-keychain-rescue" part="LED-RESCUE-airplane-keychain" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000058d8018c</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <libsource lib="airplane-keychain-rescue" part="LED-RESCUE-airplane-keychain" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000058d8023b</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <libsource lib="airplane-keychain-rescue" part="LED-RESCUE-airplane-keychain" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000058d8036c</tstamps>
+    </comp>
+    <comp ref="D6">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <libsource lib="airplane-keychain-rescue" part="LED-RESCUE-airplane-keychain" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000058d80aa4</tstamps>
+    </comp>
+    <comp ref="D7">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <libsource lib="airplane-keychain-rescue" part="LED-RESCUE-airplane-keychain" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000058d8158b</tstamps>
+    </comp>
+    <comp ref="D8">
+      <value>LED</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <libsource lib="airplane-keychain-rescue" part="LED-RESCUE-airplane-keychain" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>701a185b-679b-421d-827f-e41eca39b14f</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_4.3mm_M4</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4d51a555-7387-4424-9427-3ede1a339b1f</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>100</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal</footprint>
+      <libsource lib="airplane-keychain-rescue" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000058e07a9a</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>100</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal</footprint>
+      <libsource lib="airplane-keychain-rescue" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000058e07b96</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>100</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal</footprint>
+      <libsource lib="airplane-keychain-rescue" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000058e07bff</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>100</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal</footprint>
+      <libsource lib="airplane-keychain-rescue" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000058e07c60</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>100</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal</footprint>
+      <libsource lib="airplane-keychain-rescue" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000058e07d29</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal</footprint>
+      <libsource lib="airplane-keychain-rescue" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000590667e2</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>100</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal</footprint>
+      <libsource lib="airplane-keychain-rescue" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ef6d67db-b694-4462-8c6b-b65f0d866784</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>100</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal</footprint>
+      <libsource lib="airplane-keychain-rescue" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>071c6966-f1b5-4a5c-856a-aa325742d97c</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>100</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal</footprint>
+      <libsource lib="airplane-keychain-rescue" part="R" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5436c389-93b1-4253-8929-1cffc32ebd2f</tstamps>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_PUSH</value>
+      <footprint>Button_Switch_THT:SW_PUSH_6mm</footprint>
+      <libsource lib="airplane-keychain-rescue" part="SW_PUSH" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000058d81c3d</tstamps>
+    </comp>
+    <comp ref="SW2">
+      <value>SPST</value>
+      <footprint>Button_Switch_THT:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W7.62mm_P2.54mm</footprint>
+      <libsource lib="airplane-keychain-rescue" part="SPST" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000058d82980</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>ATtiny85-20P</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf</datasheet>
+      <libsource lib="MCU_Microchip_ATtiny" part="ATtiny85-20P" description="20MHz, 8kB Flash, 512B SRAM, 512B EEPROM, debugWIRE, DIP-8"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="airplane-keychain.kicad_sch"/>
+      <property name="ki_description" value="20MHz, 8kB Flash, 512B SRAM, 512B EEPROM, debugWIRE, DIP-8"/>
+      <property name="ki_keywords" value="AVR 8bit Microcontroller tinyAVR"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6940754a-dc9e-4490-b709-f068d911ffe6</tstamps>
     </comp>
   </components>
   <libparts>
-    <libpart lib="airplane-keychain-cache" part="ATTINY25-P">
-      <aliases>
-        <alias>ATTINY45-P</alias>
-        <alias>ATTINY85-P</alias>
-      </aliases>
+    <libpart lib="MCU_Microchip_ATtiny" part="ATtiny85-20P">
+      <description>20MHz, 8kB Flash, 512B SRAM, 512B EEPROM, debugWIRE, DIP-8</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
       <fields>
-        <field name="Reference">IC</field>
-        <field name="Value">ATTINY25-P</field>
-        <field name="Footprint">DIP8</field>
+        <field name="Reference">U</field>
+        <field name="Value">ATtiny85-20P</field>
+        <field name="Footprint">Package_DIP:DIP-8_W7.62mm</field>
+        <field name="Datasheet">http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf</field>
       </fields>
       <pins>
-        <pin num="1" name="PB5(~RESET~/dW/ADC0/PCINT5)" type="BiDi"/>
-        <pin num="2" name="PB3(XTAL1/CLKI/OC1B/ADC3/PCINT3)" type="BiDi"/>
-        <pin num="3" name="PB4(XTAL2/CLKO/OC1B/ADC2/PCINT4)" type="BiDi"/>
+        <pin num="1" name="~{RESET}/PB5" type="bidirectional"/>
+        <pin num="2" name="XTAL1/PB3" type="bidirectional"/>
+        <pin num="3" name="XTAL2/PB4" type="bidirectional"/>
         <pin num="4" name="GND" type="power_in"/>
-        <pin num="5" name="PB0(MOSI/DI/SDA/AIN0/OC0A/OC1A/AREF/PCINT0)" type="BiDi"/>
-        <pin num="6" name="PB1(MISO/DO/AIN1/OC0B/OC1A/PCINT1)" type="BiDi"/>
-        <pin num="7" name="PB2(SCK/USCK/SCL/T0/INT0/ADC1/PCINT2)" type="BiDi"/>
+        <pin num="5" name="AREF/PB0" type="bidirectional"/>
+        <pin num="6" name="PB1" type="bidirectional"/>
+        <pin num="7" name="PB2" type="bidirectional"/>
         <pin num="8" name="VCC" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="Battery_Cell">
-      <description>single battery cell</description>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Datasheet">~</field>
+      </fields>
+    </libpart>
+    <libpart lib="airplane-keychain-rescue" part="Battery_Cell">
       <fields>
         <field name="Reference">BT</field>
         <field name="Value">Battery_Cell</field>
@@ -205,8 +302,7 @@
         <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="R">
-      <description>Resistor</description>
+    <libpart lib="airplane-keychain-rescue" part="R">
       <footprints>
         <fp>R_*</fp>
         <fp>R_*</fp>
@@ -216,11 +312,11 @@
         <field name="Value">R</field>
       </fields>
       <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="airplane-keychain-cache" part="SPST">
+    <libpart lib="airplane-keychain-rescue" part="SPST">
       <fields>
         <field name="Reference">SW</field>
         <field name="Value">SPST</field>
@@ -230,7 +326,7 @@
         <pin num="2" name="2" type="input"/>
       </pins>
     </libpart>
-    <libpart lib="airplane-keychain-cache" part="SW_PUSH">
+    <libpart lib="airplane-keychain-rescue" part="SW_PUSH">
       <fields>
         <field name="Reference">SW</field>
         <field name="Value">SW_PUSH</field>
@@ -242,94 +338,102 @@
     </libpart>
   </libparts>
   <libraries>
-    <library logical="device">
-      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+    <library logical="MCU_Microchip_ATtiny">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//MCU_Microchip_ATtiny.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Mechanical.kicad_sym</uri>
     </library>
     <library logical="airplane-keychain-rescue">
-      <uri>C:\Users\Matthew\Documents\GitHub\airplane_keychain\hw\airplane-keychain-rescue.lib</uri>
-    </library>
-    <library logical="airplane-keychain-cache">
-      <uri>C:\Users\Matthew\Documents\GitHub\airplane_keychain\hw\airplane-keychain-cache.lib</uri>
+      <uri>/Users/matgyver/GitHub/airplane_keychain/hw/airplane-keychain-rescue.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(IC1-Pad6)">
-      <node ref="IC1" pin="6"/>
-      <node ref="R2" pin="1"/>
+    <net code="1" name="GND">
+      <node ref="BT1" pin="2" pinfunction="-" pintype="passive"/>
+      <node ref="BT2" pin="2" pinfunction="-" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D6" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D7" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D8" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="GND" pintype="power_in"/>
     </net>
-    <net code="2" name="Net-(D2-Pad2)">
-      <node ref="D2" pin="2"/>
-      <node ref="R2" pin="2"/>
+    <net code="2" name="Net-(BT1-+)">
+      <node ref="BT1" pin="1" pinfunction="+" pintype="passive"/>
+      <node ref="BT2" pin="1" pinfunction="+" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="2" pintype="input"/>
     </net>
-    <net code="3" name="Net-(IC1-Pad5)">
-      <node ref="IC1" pin="5"/>
-      <node ref="R1" pin="1"/>
+    <net code="3" name="Net-(D1-A)">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
     </net>
-    <net code="4" name="Net-(D1-Pad2)">
-      <node ref="R1" pin="2"/>
-      <node ref="D1" pin="2"/>
+    <net code="4" name="Net-(D2-A)">
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
     </net>
-    <net code="5" name="Net-(D7-Pad2)">
-      <node ref="D7" pin="2"/>
-      <node ref="R7" pin="2"/>
+    <net code="5" name="Net-(D3-A)">
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
     </net>
-    <net code="6" name="Net-(R7-Pad1)">
-      <node ref="SW1" pin="1"/>
-      <node ref="R7" pin="1"/>
+    <net code="6" name="Net-(D4-A)">
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
     </net>
-    <net code="7" name="Net-(D6-Pad2)">
-      <node ref="R6" pin="2"/>
-      <node ref="D6" pin="2"/>
+    <net code="7" name="Net-(D5-A)">
+      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
     </net>
-    <net code="8" name="Net-(D5-Pad2)">
-      <node ref="R5" pin="2"/>
-      <node ref="D5" pin="2"/>
+    <net code="8" name="Net-(D6-A)">
+      <node ref="D6" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
     </net>
-    <net code="9" name="Net-(D3-Pad2)">
-      <node ref="R3" pin="2"/>
-      <node ref="D3" pin="2"/>
+    <net code="9" name="Net-(D7-A)">
+      <node ref="D7" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
     </net>
-    <net code="10" name="Net-(D4-Pad2)">
-      <node ref="D4" pin="2"/>
-      <node ref="R4" pin="2"/>
+    <net code="10" name="Net-(D8-A)">
+      <node ref="D8" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
     </net>
-    <net code="11" name="Net-(IC1-Pad8)">
-      <node ref="IC1" pin="8"/>
-      <node ref="SW2" pin="1"/>
+    <net code="11" name="Net-(R5-Pad1)">
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="12" name="Net-(IC1-Pad1)">
-      <node ref="IC1" pin="1"/>
-      <node ref="R6" pin="1"/>
+    <net code="12" name="Net-(U1-AREF{slash}PB0)">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="AREF/PB0" pintype="bidirectional"/>
     </net>
-    <net code="13" name="Net-(IC1-Pad3)">
-      <node ref="IC1" pin="3"/>
-      <node ref="R5" pin="1"/>
+    <net code="13" name="Net-(U1-PB1)">
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="PB1" pintype="bidirectional"/>
     </net>
-    <net code="14" name="Net-(IC1-Pad2)">
-      <node ref="IC1" pin="2"/>
-      <node ref="R4" pin="1"/>
+    <net code="14" name="Net-(U1-PB2)">
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="PB2" pintype="bidirectional"/>
     </net>
-    <net code="15" name="Net-(IC1-Pad7)">
-      <node ref="IC1" pin="7"/>
-      <node ref="R3" pin="1"/>
+    <net code="15" name="Net-(U1-VCC)">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="1" pintype="input"/>
+      <node ref="U1" pin="8" pinfunction="VCC" pintype="power_in"/>
     </net>
-    <net code="16" name="GND">
-      <node ref="D1" pin="1"/>
-      <node ref="BT2" pin="2"/>
-      <node ref="IC1" pin="4"/>
-      <node ref="BT1" pin="2"/>
-      <node ref="D2" pin="1"/>
-      <node ref="D7" pin="1"/>
-      <node ref="D6" pin="1"/>
-      <node ref="D5" pin="1"/>
-      <node ref="D4" pin="1"/>
-      <node ref="D3" pin="1"/>
+    <net code="16" name="Net-(U1-XTAL1{slash}PB3)">
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="XTAL1/PB3" pintype="bidirectional"/>
     </net>
-    <net code="17" name="Net-(BT1-Pad1)">
-      <node ref="SW2" pin="2"/>
-      <node ref="BT2" pin="1"/>
-      <node ref="BT1" pin="1"/>
-      <node ref="SW1" pin="2"/>
+    <net code="17" name="Net-(U1-XTAL2{slash}PB4)">
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="XTAL2/PB4" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="Net-(U1-~{RESET}{slash}PB5)">
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="~{RESET}/PB5" pintype="bidirectional"/>
     </net>
   </nets>
 </export>
