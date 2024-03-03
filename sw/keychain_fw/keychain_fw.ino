@@ -10,7 +10,7 @@ int count = 0;  //Initialize counter
 #define LED_Tail      0
 #define LED_NAVL      3
 #define LED_NAVR      2
-#define LED_STROBE   4
+#define LED_STROBE    4
 
 void setup() {
   // put your setup code here, to run once:
@@ -22,6 +22,7 @@ void setup() {
   digitalWrite(LED_NAVR,HIGH);
   digitalWrite(LED_NAVL,HIGH);
   analogWrite(LED_Tail,90);
+  analogWrite(LED_Beacon,90);
 }
 
 void loop() {
@@ -38,9 +39,10 @@ void loop() {
   }
   
   analogWrite(LED_Beacon, brightness);
+  analogWrite(LED_Tail, (255 - brightness));
   // change the brightness for next time through the loop:
   brightness = brightness + fadeAmount;
- 
+
   // reverse the direction of the fading at the ends of the fade:
   if (brightness == 0 || brightness == 255) {
     fadeAmount = -fadeAmount ;
