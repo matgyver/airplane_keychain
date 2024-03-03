@@ -1,4 +1,4 @@
-22824881079609576
+22366283042187099
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -3178,15 +3178,15 @@ capacitor handsolder
 2
 2
 Capacitor_SMD
-C_2220_5650Metric
-Capacitor SMD 2220 (5650 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf), generated with kicad-footprint-generator
+C_2220_5750Metric
+Capacitor SMD 2220 (5750 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf), generated with kicad-footprint-generator
 capacitor
 0
 2
 2
 Capacitor_SMD
-C_2220_5650Metric_Pad1.97x5.40mm_HandSolder
-Capacitor SMD 2220 (5650 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf), generated with kicad-footprint-generator
+C_2220_5750Metric_Pad1.97x5.40mm_HandSolder
+Capacitor SMD 2220 (5750 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size from: http://datasheets.avx.com/AVX-HV_MLCC.pdf), generated with kicad-footprint-generator
 capacitor handsolder
 0
 2
@@ -8995,13 +8995,6 @@ DIN 41612 IEC 60603 Q/2
 32
 32
 Connector_DIN
-DIN41612_Q2_2x16_Male_Horizontal_THT
-DIN41612 connector, type Q/2, Horizontal, 2 rows 16 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
-DIN 41612 IEC 60603 Q/2
-0
-32
-32
-Connector_DIN
 DIN41612_Q2_2x16_Male_Vertical_THT
 DIN41612 connector, type Q/2, Vertical, 2 rows 16 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
 DIN 41612 IEC 60603 Q/2
@@ -9010,13 +9003,6 @@ DIN 41612 IEC 60603 Q/2
 32
 Connector_DIN
 DIN41612_Q3_2x10_Female_Horizontal_THT
-DIN41612 connector, type Q/3, Horizontal, 2 rows 10 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
-DIN 41612 IEC 60603 Q/3
-0
-20
-20
-Connector_DIN
-DIN41612_Q3_2x10_Male_Horizontal_THT
 DIN41612 connector, type Q/3, Horizontal, 2 rows 10 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
 DIN 41612 IEC 60603 Q/3
 0
@@ -9037,13 +9023,6 @@ DIN 41612 IEC 60603 Q
 64
 64
 Connector_DIN
-DIN41612_Q_2x32_Male_Horizontal_THT
-DIN41612 connector, type Q, Horizontal, 2 rows 32 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
-DIN 41612 IEC 60603 Q
-0
-64
-64
-Connector_DIN
 DIN41612_Q_2x32_Male_Vertical_THT
 DIN41612 connector, type Q, Vertical, 2 rows 32 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
 DIN 41612 IEC 60603 Q
@@ -9052,13 +9031,6 @@ DIN 41612 IEC 60603 Q
 64
 Connector_DIN
 DIN41612_R2_2x16_Female_Horizontal_THT
-DIN41612 connector, type R/2, Horizontal, 3 rows 16 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
-DIN 41612 IEC 60603 R/2
-0
-32
-32
-Connector_DIN
-DIN41612_R2_2x16_Male_Horizontal_THT
 DIN41612 connector, type R/2, Horizontal, 3 rows 16 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
 DIN 41612 IEC 60603 R/2
 0
@@ -9079,13 +9051,6 @@ DIN 41612 IEC 60603 R/2
 48
 48
 Connector_DIN
-DIN41612_R2_3x16_Male_Horizontal_THT
-DIN41612 connector, type R/2, Horizontal, 3 rows 16 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
-DIN 41612 IEC 60603 R/2
-0
-48
-48
-Connector_DIN
 DIN41612_R2_3x16_Male_Vertical_THT
 DIN41612 connector, type R/2, Vertical, 3 rows 16 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
 DIN 41612 IEC 60603 R/2
@@ -9094,13 +9059,6 @@ DIN 41612 IEC 60603 R/2
 48
 Connector_DIN
 DIN41612_R3_2x10_Female_Horizontal_THT
-DIN41612 connector, type R/3, Horizontal, 3 rows 10 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
-DIN 41612 IEC 60603 R/3
-0
-20
-20
-Connector_DIN
-DIN41612_R3_2x10_Male_Horizontal_THT
 DIN41612 connector, type R/3, Horizontal, 3 rows 10 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
 DIN 41612 IEC 60603 R/3
 0
@@ -9121,13 +9079,6 @@ DIN 41612 IEC 60603 R/3
 30
 30
 Connector_DIN
-DIN41612_R3_3x10_Male_Horizontal_THT
-DIN41612 connector, type R/3, Horizontal, 3 rows 10 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
-DIN 41612 IEC 60603 R/3
-0
-30
-30
-Connector_DIN
 DIN41612_R3_3x10_Male_Vertical_THT
 DIN41612 connector, type R/3, Vertical, 3 rows 10 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
 DIN 41612 IEC 60603 R/3
@@ -9136,13 +9087,6 @@ DIN 41612 IEC 60603 R/3
 30
 Connector_DIN
 DIN41612_R_1x32_Female_Horizontal_THT
-DIN41612 connector, type R, Horizontal, 3 rows 32 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
-DIN 41612 IEC 60603 R
-0
-32
-32
-Connector_DIN
-DIN41612_R_1x32_Male_Horizontal_THT
 DIN41612 connector, type R, Horizontal, 3 rows 32 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
 DIN 41612 IEC 60603 R
 0
@@ -9163,13 +9107,6 @@ DIN 41612 IEC 60603 R
 32
 32
 Connector_DIN
-DIN41612_R_2x16_Male_Horizontal_THT
-DIN41612 connector, type R, Horizontal, 3 rows 32 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
-DIN 41612 IEC 60603 R
-0
-32
-32
-Connector_DIN
 DIN41612_R_2x16_Male_Vertical_THT
 DIN41612 connector, type R, Vertical, 3 rows 32 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
 DIN 41612 IEC 60603 R
@@ -9178,13 +9115,6 @@ DIN 41612 IEC 60603 R
 32
 Connector_DIN
 DIN41612_R_2x32_Female_Horizontal_THT
-DIN41612 connector, type R, Horizontal, 3 rows 32 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
-DIN 41612 IEC 60603 R
-0
-64
-64
-Connector_DIN
-DIN41612_R_2x32_Male_Horizontal_THT
 DIN41612 connector, type R, Horizontal, 3 rows 32 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
 DIN 41612 IEC 60603 R
 0
@@ -9205,13 +9135,6 @@ DIN 41612 IEC 60603 R
 48
 48
 Connector_DIN
-DIN41612_R_3x16_Male_Horizontal_THT
-DIN41612 connector, type R, Horizontal, 3 rows 32 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
-DIN 41612 IEC 60603 R
-0
-48
-48
-Connector_DIN
 DIN41612_R_3x16_Male_Vertical_THT
 DIN41612 connector, type R, Vertical, 3 rows 32 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
 DIN 41612 IEC 60603 R
@@ -9220,13 +9143,6 @@ DIN 41612 IEC 60603 R
 48
 Connector_DIN
 DIN41612_R_3x32_Female_Horizontal_THT
-DIN41612 connector, type R, Horizontal, 3 rows 32 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
-DIN 41612 IEC 60603 R
-0
-96
-96
-Connector_DIN
-DIN41612_R_3x32_Male_Horizontal_THT
 DIN41612 connector, type R, Horizontal, 3 rows 32 pins wide, https://www.erni-x-press.com/de/downloads/kataloge/englische_kataloge/erni-din41612-iec60603-2-e.pdf
 DIN 41612 IEC 60603 R
 0
@@ -43134,8 +43050,8 @@ RJ9 Connector tab down
 4
 4
 Connector_RJ
-RJ12_Amphenol_54601
-RJ12 connector  https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/c-bmj-0082.pdf
+RJ12_Amphenol_54601-x06_Horizontal
+RJ12 6P6C horizontal socket, plastic body, tab down, https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/c-bmj-0082.pdf
 RJ12 connector
 0
 6
@@ -52916,13 +52832,6 @@ Diode_SMD
 Nexperia_DSN1608-2_1.6x0.8mm
 Diode SMD DSN1608, 1.6 x 0.8 x 0.29 mm, https://assets.nexperia.com/documents/package-information/SOD964.pdf
 diode SOD964 SOD-964
-0
-2
-2
-Diode_SMD
-ST_QFN-2L_1.6x1.0mm
-Unidirectional high power transient voltage suppressor (https://www.st.com/resource/en/datasheet/esda7p120-1u1m.pdf)
-QFN-2L Diode
 0
 2
 2
@@ -66297,13 +66206,6 @@ eMMC Flash LFBGA169
 169
 169
 Package_BGA
-LFBGA-289_14x14mm_Layout17x17_P0.8mm
-LFBGA-289, 14.0x14.0mm, 289 Ball, 17x17 Layout, 0.8mm Pitch, https://www.st.com/resource/en/datasheet/stm32mp131c.pdf
-BGA 289 0.8
-0
-289
-289
-Package_BGA
 LFBGA-400_16x16mm_Layout20x20_P0.8mm
 LFBGA-400, NSMD, 16.0x16.0mm, 400 Ball, 20x20 Layout, 0.8mm Pitch, https://www.efinixinc.com/docs/titanium-packaging-ug-v5.2.pdf
 BGA 400 0.8 400-ball FBGA
@@ -66317,13 +66219,6 @@ BGA 484 0.8 484-ball LFBGA
 0
 484
 484
-Package_BGA
-Lattice_caBGA-381_17.0x17.0mm_Layout20x20_P0.8mm_Ball0.4mm_Pad0.4mm
-Lattice caBGA-381, ECP5 FPGAs, 17.0x17.0mm, 381 Ball, 20x20 Layout, 0.8mm Pitch, http://www.latticesemi.com/view_document?document_id=213
-BGA 381 0.8
-0
-381
-381
 Package_BGA
 Lattice_caBGA-381_17.0x17.0mm_Layout20x20_P0.8mm_Ball0.4mm_Pad0.4mm_NSMD
 Lattice caBGA-381 footprint for ECP5 FPGAs, based on http://www.latticesemi.com/view_document?document_id=213
@@ -66535,13 +66430,6 @@ BGA 64 0.5
 64
 64
 Package_BGA
-TFBGA-81_5x5mm_Layout8x8_P0.5mm
-TFBGA-81, NSMD, 5.0x5.0mm, 81 Ball, 9x9 Layout, 0.5mm Pitch, https://www.efinixinc.com/docs/trion-packaging-ug-v4.9.pdf
-BGA 81 0.5 81-ball FBGA
-0
-81
-81
-Package_BGA
 TFBGA-100_5.5x5.5mm_Layout10x10_P0.5mm
 TFBGA-100, NSMD, 5.5x5.5mm, 100 Ball, 10x10 Layout, 0.5mm Pitch, https://www.efinixinc.com/docs/titanium-packaging-ug-v5.2.pdf
 BGA 100 0.5 100-ball FBGA
@@ -66591,13 +66479,6 @@ BGA 225 0.65 225-ball FBGA
 225
 225
 Package_BGA
-TFBGA-256_13x13mm_Layout16x16_P0.8mm
-TFBGA-256, NSMD, 13.0x13.0mm, 256 Ball, 16x16 Layout, 0.8mm Pitch, https://www.efinixinc.com/docs/trion-packaging-ug-v4.9.pdf
-BGA 256 0.8 256-ball FBGA
-0
-256
-256
-Package_BGA
 TFBGA-265_14x14mm_Layout17x17_P0.8mm
 TFBGA-265, 14.0x14.0mm, 265 Ball, 17x17 Layout, 0.8mm Pitch, http://www.st.com/resource/en/datasheet/DM00387108.pdf#page=223
 BGA 265 0.8
@@ -66605,33 +66486,12 @@ BGA 265 0.8
 265
 265
 Package_BGA
-TFBGA-289_9x9mm_Layout17x17_P0.5mm
-TFBGA-289, 9.0x9.0mm, 289 Ball, 17x17 Layout, 0.5mm Pitch, https://www.st.com/resource/en/datasheet/stm32mp131c.pdf
-BGA 289 0.5
-0
-289
-289
-Package_BGA
-TFBGA-324_12x12mm_Layout18x18_P0.8mm
-TFBGA-324, NSMD, 12.0x12.0mm, 324 Ball, 18x18 Layout, 0.65mm Pitch, https://www.efinixinc.com/docs/trion-packaging-ug-v4.9.pdf
-BGA 324 0.65 324-ball FBGA
-0
-324
-324
-Package_BGA
 TFBGA-361_13x13mm_Layout19x19_P0.65mm
 TFBGA-361, NSMD, 13.0x13.0mm, 361 Ball, 19x19 Layout, 0.65mm Pitch, https://www.efinixinc.com/docs/titanium-packaging-ug-v5.2.pdf
 BGA 361 0.65 361-ball FBGA
 0
 361
 361
-Package_BGA
-TFBGA-576_16x16mm_Layout24x24_P0.65mm
-TFBGA-576, NSMD, 16.0x16.0mm, 576 Ball, 24x24 Layout, 0.65mm Pitch, https://www.efinixinc.com/docs/trion-packaging-ug-v4.9.pdf
-BGA 576 0.65 576-ball FBGA
-0
-576
-576
 Package_BGA
 Texas_BGA-289_15.0x15.0mm_Layout17x17_P0.8mm_Ball0.5mm_Pad0.4mm
 Texas Instruments BGA-289, 0.4mm pad, 15x15mm, 289 Ball, 17x17 Layout, 0.8mm Pitch, https://www.ti.com/lit/ml/mpbg777/mpbg777.pdf
@@ -67304,13 +67164,6 @@ CSP 64 0.4 64-ball WLCSP
 0
 64
 64
-Package_CSP
-Efinix_WLCSP-80_4.4567x3.5569mm_Layout10x8_P0.4mm
-WLCSP-80, NSMD pad definition Page 54, 4.4567x3.5569mm, 80 Ball, 10x8 Layout, 0.4mm Pitch, https://www.efinixinc.com/docs/trion-packaging-ug-v4.9.pdf
-CSP 80 0.4 80-ball WLCSP
-0
-80
-80
 Package_CSP
 LFCSP-6-1EP_2x2mm_P0.65mm_EP1x1.6mm
 LFCSP, 6 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/lfcspcp/cp_6_3.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
@@ -68675,6 +68528,13 @@ DDB Package; 12-Lead Plastic DFN (3mm x 2mm) (see Linear Technology DFN_12_05-08
 DFN 0.45
 0
 15
+13
+Package_DFN_QFN
+DFN-12-1EP_3x3mm_P0.5mm_EP1.4x2.55mm
+DFN, 12 Pin (https://www.st.com/resource/en/datasheet/st25dv04k.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+DFN NoLead
+0
+14
 13
 Package_DFN_QFN
 DFN-12-1EP_3x3mm_P0.5mm_EP1.6x2.5mm
@@ -71617,104 +71477,6 @@ QFN NoLead
 36
 25
 Package_DFN_QFN
-Texas_RGZ0048A_VQFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm
-Texas RGZ0048A VQFN, 48 Pin (http://www.ti.com/lit/ds/symlink/msp430f5232.pdf#page=113), generated with kicad-footprint-generator ipc_noLead_generator.py
-Texas VQFN NoLead
-0
-65
-49
-Package_DFN_QFN
-Texas_RGZ0048A_VQFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm_ThermalVias
-Texas RGZ0048A VQFN, 48 Pin (http://www.ti.com/lit/ds/symlink/msp430f5232.pdf#page=113), generated with kicad-footprint-generator ipc_noLead_generator.py
-Texas VQFN NoLead
-0
-111
-49
-Package_DFN_QFN
-Texas_RHA0040B_VQFN-40-1EP_6x6mm_P0.5mm_EP4.15x4.15mm
-Texas RHA0040B VQFN, 40 Pin (http://www.ti.com/lit/ds/symlink/msp430g2755.pdf#page=72 JEDEC MO-220 variation VJJD-2), generated with kicad-footprint-generator ipc_noLead_generator.py
-Texas VQFN NoLead
-0
-50
-41
-Package_DFN_QFN
-Texas_RHA0040B_VQFN-40-1EP_6x6mm_P0.5mm_EP4.15x4.15mm_ThermalVias
-Texas RHA0040B VQFN, 40 Pin (http://www.ti.com/lit/ds/symlink/msp430g2755.pdf#page=72 JEDEC MO-220 variation VJJD-2), generated with kicad-footprint-generator ipc_noLead_generator.py
-Texas VQFN NoLead
-0
-83
-41
-Package_DFN_QFN
-Texas_RHA0040D_VQFN-40-1EP_6x6mm_P0.5mm_EP2.9x2.9mm
-Texas RHA0040D VQFN, 40 Pin (http://www.ti.com/lit/ds/symlink/msp430fr5731.pdf#page=111 JEDEC MO-220 variation VJJD-2), generated with kicad-footprint-generator ipc_noLead_generator.py
-Texas VQFN NoLead
-0
-45
-41
-Package_DFN_QFN
-Texas_RHA0040D_VQFN-40-1EP_6x6mm_P0.5mm_EP2.9x2.9mm_ThermalVias
-Texas RHA0040D VQFN, 40 Pin (http://www.ti.com/lit/ds/symlink/msp430fr5731.pdf#page=111 JEDEC MO-220 variation VJJD-2), generated with kicad-footprint-generator ipc_noLead_generator.py
-Texas VQFN NoLead
-0
-55
-41
-Package_DFN_QFN
-Texas_RHA0040E_VQFN-40-1EP_6x6mm_P0.5mm_EP3.52x2.62mm
-Texas RHA0040E VQFN, 40 Pin (http://www.ti.com/lit/ds/symlink/drv8308.pdf#page=57 JEDEC MO-220 variation VJJD-2), generated with kicad-footprint-generator ipc_noLead_generator.py
-Texas VQFN NoLead
-0
-47
-41
-Package_DFN_QFN
-Texas_RHA0040E_VQFN-40-1EP_6x6mm_P0.5mm_EP3.52x2.62mm_ThermalVias
-Texas RHA0040E VQFN, 40 Pin (http://www.ti.com/lit/ds/symlink/drv8308.pdf#page=57 JEDEC MO-220 variation VJJD-2), generated with kicad-footprint-generator ipc_noLead_generator.py
-Texas VQFN NoLead
-0
-60
-41
-Package_DFN_QFN
-Texas_RHA_VQFN-40-1EP_6x6mm_P0.5mm_EP4.6x4.6mm
-Texas RHA VQFN, 40 Pin (http://www.ti.com/lit/ds/symlink/dac7750.pdf#page=49), generated with kicad-footprint-generator ipc_noLead_generator.py
-Texas VQFN NoLead
-0
-50
-41
-Package_DFN_QFN
-Texas_RHA_VQFN-40-1EP_6x6mm_P0.5mm_EP4.6x4.6mm_ThermalVias
-Texas RHA VQFN, 40 Pin (http://www.ti.com/lit/ds/symlink/dac7750.pdf#page=49), generated with kicad-footprint-generator ipc_noLead_generator.py
-Texas VQFN NoLead
-0
-83
-41
-Package_DFN_QFN
-Texas_RHB0032E_VQFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm
-Texas RHB0032E VQFN, 32 Pin (http://www.ti.com/lit/ds/symlink/msp430f1122.pdf#page=54), generated with kicad-footprint-generator ipc_noLead_generator.py
-Texas VQFN NoLead
-0
-42
-33
-Package_DFN_QFN
-Texas_RHB0032E_VQFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm_ThermalVias
-Texas RHB0032E VQFN, 32 Pin (http://www.ti.com/lit/ds/symlink/msp430f1122.pdf#page=54), generated with kicad-footprint-generator ipc_noLead_generator.py
-Texas VQFN NoLead
-0
-59
-33
-Package_DFN_QFN
-Texas_RHH0036C_VQFN-36-1EP_6x6mm_P0.5mm_EP4.4x4.4mm
-Texas RHH0036C VQFN, 36 Pin (http://www.ti.com/lit/ds/slvsba5d/slvsba5d.pdf#page=37), generated with kicad-footprint-generator ipc_noLead_generator.py
-Texas VQFN NoLead
-0
-46
-37
-Package_DFN_QFN
-Texas_RHH0036C_VQFN-36-1EP_6x6mm_P0.5mm_EP4.4x4.4mm_ThermalVias
-Texas RHH0036C VQFN, 36 Pin (http://www.ti.com/lit/ds/slvsba5d/slvsba5d.pdf#page=37), generated with kicad-footprint-generator ipc_noLead_generator.py
-Texas VQFN NoLead
-0
-79
-37
-Package_DFN_QFN
 Texas_RJE0020A_VQFN-20-1EP_3x3mm_P0.45mm_EP0.675x0.76mm
 Texas RJE0020A VQFN, 20 Pin (https://www.ti.com/lit/ds/symlink/tps51396a.pdf#page=31), generated with kicad-footprint-generator ipc_noLead_generator.py
 Texas VQFN NoLead
@@ -72085,6 +71847,20 @@ QFN NoLead
 0
 127
 65
+Package_DFN_QFN
+Texas_S-PWQFN-N16_EP1.2x0.8mm
+Texas RTE WQFN, 16 Pin (https://www.ti.com/lit/ds/symlink/tps43060.pdf#page=40), generated with kicad-footprint-generator ipc_noLead_generator.py
+Texas WQFN NoLead
+0
+21
+17
+Package_DFN_QFN
+Texas_S-PWQFN-N16_EP1.2x0.8mm_ThermalVias
+Texas RTE WQFN, 16 Pin (https://www.ti.com/lit/ds/symlink/tps43060.pdf#page=40), generated with kicad-footprint-generator ipc_noLead_generator.py
+Texas WQFN NoLead
+0
+23
+17
 Package_DFN_QFN
 Texas_S-PWQFN-N16_EP2.1x2.1mm
 QFN, 16 Pin (http://www.ti.com/lit/ds/symlink/drv8801.pdf#page=31 MO-220 variation VGGC), generated with kicad-footprint-generator ipc_noLead_generator.py
@@ -72841,20 +72617,6 @@ WQFN NoLead
 0
 24
 15
-Package_DFN_QFN
-WQFN-16-1EP_3x3mm_P0.5mm_EP0.8x1.2mm
-WQFN, 16 Pin (https://www.ti.com/lit/ds/symlink/tps43060.pdf#page=40), generated with kicad-footprint-generator ipc_noLead_generator.py
-WQFN NoLead
-0
-21
-17
-Package_DFN_QFN
-WQFN-16-1EP_3x3mm_P0.5mm_EP0.8x1.2mm_ThermalVias
-WQFN, 16 Pin (https://www.ti.com/lit/ds/symlink/tps43060.pdf#page=40), generated with kicad-footprint-generator ipc_noLead_generator.py
-WQFN NoLead
-0
-23
-17
 Package_DFN_QFN
 WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm
 WQFN, 16 Pin (https://www.ti.com/lit/ds/symlink/tpa6132a2.pdf#page=24), generated with kicad-footprint-generator ipc_noLead_generator.py
@@ -77055,6 +76817,13 @@ QSOP 0.635
 0
 24
 24
+Package_SO
+ROHM_SOT-457_ClockwisePinNumbering
+ROHM SOT-457 SC-74, 6 Pin (https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/digital/imh3at110-e.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+ROHM SC-74 SO
+0
+6
+6
 Package_SO
 SC-74-6_1.5x2.9mm_P0.95mm
 SC-74, 6 Pin (https://www.nxp.com/docs/en/package-information/SOT457.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
@@ -82523,8 +82292,8 @@ Potentiometer vertical Bourns 3386P
 3
 3
 Potentiometer_THT
-Potentiometer_Bourns_3386W_Horizontal
-Potentiometer, horizontal, Bourns 3386W, 9.53 x 4.83 x 9.53mm, https://www.bourns.com/docs/Product-Datasheets/3386.pdf
+Potentiometer_Bourns_3386W_Vertical
+Potentiometer, vertical, Bourns 3386W, https://www.bourns.com/docs/Product-Datasheets/3386.pdf
 Potentiometer 
 0
 3
@@ -82963,13 +82732,6 @@ rf antenna
 0
 4
 2
-RF_Antenna
-NiceRF_SW868-TH13_868Mhz
-868Mhz copper string antenna, right angle, approx. 15mm coil length, 5.5mm OD, 0.8 wire diameter, https://www.nicerf.com/item/868mhz-spring-antenna-sw868-th13
-antenna rf
-0
-1
-1
 RF_Antenna
 Pulse_W3000
 Pulse Electronics W3000 tri-band antenna for GPS (1.575Ghz), 868Mhz and 2.4Ghz ISM bands, https://productfinder.pulseeng.com/products/datasheets/W3000.pdf
@@ -84833,13 +84595,6 @@ SPST relay slim
 4
 4
 Relay_THT
-Relay_SPST_Zettler-AZSR131
-American Zettler RELAY EV CHRG SOLAR SPST 35A 12V, https://zettlerelectronics.com/products/AZSR131.pdf
-SPST
-0
-4
-4
-Relay_THT
 Relay_Socket_3PDT_Omron_PLE11-0
 29mm Dia, round mounting socket, 10A, 2kV AC / minute, 1e3Mohm, https://www.omron.com.tw/data_pdf/cat/common_sockets_ds_e_6_1_csm1819.pdf?#page=27
 tube type relay
@@ -86142,20 +85897,6 @@ rotary encoder
 7
 6
 Rotary_Encoder
-RotaryEncoder_Bourns_Horizontal_PEC12R-2xxxF-Nxxxx
-Bourns rotary encoder, PEC12R, without switch, horizontal shaft, https://www.bourns.com/docs/product-datasheets/pec12r.pdf
-rotary encoder
-0
-5
-4
-Rotary_Encoder
-RotaryEncoder_Bourns_Horizontal_PEC12R-2xxxF-Sxxxx
-Bourns rotary encoder, PEC12R, with switch, horizontal shaft, https://www.bourns.com/docs/product-datasheets/pec12r.pdf
-rotary encoder
-0
-7
-6
-Rotary_Encoder
 RotaryEncoder_Bourns_Vertical_PEC12R-3x17F-Nxxxx
 Bourns rotary encoder, PEC12R, without switch, with bushing, vertical shaft, 17.5mm shaft, https://www.bourns.com/docs/product-datasheets/pec12r.pdf
 rotary encoder
@@ -86165,20 +85906,6 @@ rotary encoder
 Rotary_Encoder
 RotaryEncoder_Bourns_Vertical_PEC12R-3x17F-Sxxxx
 Bourns rotary encoder, PEC12R, with switch, with bushing, vertical shaft, 17.5mm shaft, https://www.bourns.com/docs/product-datasheets/pec12r.pdf
-rotary encoder
-0
-7
-6
-Rotary_Encoder
-RotaryEncoder_Bourns_Vertical_PEC12R-3xxxF-Nxxxx
-Bourns rotary encoder, PEC12R, without switch, vertical shaft, https://www.bourns.com/docs/product-datasheets/pec12r.pdf
-rotary encoder
-0
-5
-4
-Rotary_Encoder
-RotaryEncoder_Bourns_Vertical_PEC12R-3xxxF-Sxxxx
-Bourns rotary encoder, PEC12R, with switch, vertical shaft, https://www.bourns.com/docs/product-datasheets/pec12r.pdf
 rotary encoder
 0
 7
