@@ -6,11 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "Airplane Keychain")
-		(date "2023-04-15")
+		(date "2024-03-14")
 		(rev "B")
 		(company "Make to Innovate")
 		(comment 1 "Matthew E. Nelson")
-		(comment 2 "High Wing PCB design")
 	)
 	(lib_symbols
 		(symbol "MCU_Microchip_ATtiny:ATtiny85-20P"
