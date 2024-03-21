@@ -1,1473 +1,3807 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 6cfc2c66-5048-4a9e-b97d-b82fde315677)
-
-  (paper "A4")
-
-  (title_block
-    (title "ISGC Keychain")
-    (date "2023-12-07")
-    (rev "C")
-    (company "Make to Innovate")
-    (comment 1 "Matthew E. Nelson")
-    (comment 2 "ISGC Badge")
-  )
-
-  (lib_symbols
-    (symbol "MCU_Microchip_ATtiny:ATtiny85-20P" (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at -12.7 13.97 0)
-        (effects (font (size 1.27 1.27)) (justify left bottom))
-      )
-      (property "Value" "ATtiny85-20P" (at 2.54 -13.97 0)
-        (effects (font (size 1.27 1.27)) (justify left top))
-      )
-      (property "Footprint" "Package_DIP:DIP-8_W7.62mm" (at 0 0 0)
-        (effects (font (size 1.27 1.27) italic) hide)
-      )
-      (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "AVR 8bit Microcontroller tinyAVR" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "20MHz, 8kB Flash, 512B SRAM, 512B EEPROM, debugWIRE, DIP-8" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "DIP*W7.62mm*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "ATtiny85-20P_0_1"
-        (rectangle (start -12.7 -12.7) (end 12.7 12.7)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-      )
-      (symbol "ATtiny85-20P_1_1"
-        (pin bidirectional line (at 15.24 -5.08 180) (length 2.54)
-          (name "~{RESET}/PB5" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 0 180) (length 2.54)
-          (name "XTAL1/PB3" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 -2.54 180) (length 2.54)
-          (name "XTAL2/PB4" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 -15.24 90) (length 2.54)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 7.62 180) (length 2.54)
-          (name "AREF/PB0" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 5.08 180) (length 2.54)
-          (name "PB1" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-        (pin bidirectional line (at 15.24 2.54 180) (length 2.54)
-          (name "PB2" (effects (font (size 1.27 1.27))))
-          (number "7" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 0 15.24 270) (length 2.54)
-          (name "VCC" (effects (font (size 1.27 1.27))))
-          (number "8" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Mechanical:MountingHole" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "H" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "MountingHole" (at 0 3.175 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "mounting hole" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Mounting Hole without connection" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "MountingHole*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "MountingHole_0_1"
-        (circle (center 0 0) (radius 1.27)
-          (stroke (width 1.27) (type default))
-          (fill (type none))
-        )
-      )
-    )
-    (symbol "airplane-keychain-rescue:Battery_Cell" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "BT" (at 2.54 2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "Battery_Cell" (at 2.54 0 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (at 0 1.524 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 1.524 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Battery_Cell_0_1"
-        (rectangle (start -2.286 1.778) (end 2.286 1.524)
-          (stroke (width 0) (type solid))
-          (fill (type outline))
-        )
-        (rectangle (start -1.5748 1.1938) (end 1.4732 0.6858)
-          (stroke (width 0) (type solid))
-          (fill (type outline))
-        )
-        (polyline
-          (pts
-            (xy 0 0.762)
-            (xy 0 0)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 1.778)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0.508 3.429)
-            (xy 1.524 3.429)
-          )
-          (stroke (width 0.254) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.016 3.937)
-            (xy 1.016 2.921)
-          )
-          (stroke (width 0.254) (type solid))
-          (fill (type none))
-        )
-      )
-      (symbol "Battery_Cell_1_1"
-        (pin passive line (at 0 5.08 270) (length 2.54)
-          (name "+" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -2.54 90) (length 2.54)
-          (name "-" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "airplane-keychain-rescue:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "airplane-keychain-rescue:LED-RESCUE-airplane-keychain" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "D" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "LED-RESCUE-airplane-keychain" (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "ki_fp_filters" "LED-3MM LED-5MM LED-10MM LED-0603 LED-0805 LED-1206 LEDV" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "LED-RESCUE-airplane-keychain_0_1"
-        (polyline
-          (pts
-            (xy -1.27 1.27)
-            (xy -1.27 -1.27)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.032 -0.635)
-            (xy -3.175 -1.651)
-            (xy -3.048 -1.016)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.651 -1.016)
-            (xy -2.794 -2.032)
-            (xy -2.667 -1.397)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 1.27)
-            (xy -1.27 0)
-            (xy 1.27 -1.27)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type outline))
-        )
-      )
-      (symbol "LED-RESCUE-airplane-keychain_1_1"
-        (pin passive line (at -5.08 0 0) (length 3.81)
-          (name "K" (effects (font (size 1.016 1.016))))
-          (number "1" (effects (font (size 1.016 1.016))))
-        )
-        (pin passive line (at 5.08 0 180) (length 3.81)
-          (name "A" (effects (font (size 1.016 1.016))))
-          (number "2" (effects (font (size 1.016 1.016))))
-        )
-      )
-    )
-    (symbol "airplane-keychain-rescue:R" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (at 2.032 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "R" (at 0 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at -1.778 0 90)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "R_* R_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "R_0_1"
-        (rectangle (start -1.016 -2.54) (end 1.016 2.54)
-          (stroke (width 0.254) (type solid))
-          (fill (type none))
-        )
-      )
-      (symbol "R_1_1"
-        (pin passive line (at 0 3.81 270) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "airplane-keychain-rescue:SPST" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "SW" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "SPST" (at 0 -2.54 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (symbol "SPST_0_0"
-        (circle (center -3.81 0) (radius 1.27)
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.54 0)
-            (xy 2.54 2.54)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (circle (center 3.81 0) (radius 1.27)
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-      )
-      (symbol "SPST_1_1"
-        (pin input line (at -12.7 0 0) (length 7.62)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at 12.7 0 180) (length 7.62)
-          (name "2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "airplane-keychain-rescue:SW_PUSH" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "SW" (at 3.81 2.794 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "SW_PUSH" (at 0 -2.032 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (symbol "SW_PUSH_0_1"
-        (rectangle (start -4.318 1.27) (end 4.318 1.524)
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.016 1.524)
-            (xy -0.762 2.286)
-            (xy 0.762 2.286)
-            (xy 1.016 1.524)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (pin passive inverted (at -7.62 0 0) (length 5.08)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive inverted (at 7.62 0 180) (length 5.08)
-          (name "2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-  (junction (at 40.64 80.01) (diameter 0) (color 0 0 0 0)
-    (uuid 00850661-1378-4efd-a4b1-c3817f34df4c)
-  )
-  (junction (at 40.64 59.69) (diameter 0) (color 0 0 0 0)
-    (uuid 1ac695fe-2dac-4fdc-84e4-2eef7cbd8d65)
-  )
-  (junction (at 40.64 133.35) (diameter 0) (color 0 0 0 0)
-    (uuid 1e6bb37c-98ea-491d-93a7-c6425ae0f254)
-  )
-  (junction (at 40.64 102.87) (diameter 0) (color 0 0 0 0)
-    (uuid 205d99df-99cc-4c66-8501-c2efefcb126c)
-  )
-  (junction (at 40.64 71.12) (diameter 0) (color 0 0 0 0)
-    (uuid 23561d7d-7843-433a-bcfd-bbd746b09dd3)
-  )
-  (junction (at 88.9 127) (diameter 0) (color 0 0 0 0)
-    (uuid 4d4c6203-752d-4881-b531-5169d1b21a6e)
-  )
-  (junction (at 118.11 93.98) (diameter 0) (color 0 0 0 0)
-    (uuid 5da2084e-3967-4392-b6d9-a8201fd700a8)
-  )
-  (junction (at 88.9 116.84) (diameter 0) (color 0 0 0 0)
-    (uuid 6514ca81-9dda-48eb-987b-657ba45d8d58)
-  )
-  (junction (at 207.01 90.17) (diameter 0) (color 0 0 0 0)
-    (uuid 6ace0296-88a6-4a0e-b0e7-5b278150a8a5)
-  )
-  (junction (at 40.64 93.98) (diameter 0) (color 0 0 0 0)
-    (uuid af4f6ad6-771e-400c-9159-e72aac6b7a40)
-  )
-  (junction (at 220.98 107.95) (diameter 0) (color 0 0 0 0)
-    (uuid d5481589-f7d2-4910-a082-85088ab3b2d7)
-  )
-  (junction (at 40.64 116.84) (diameter 0) (color 0 0 0 0)
-    (uuid d6020cbe-9f47-4403-8c92-be3709915f27)
-  )
-  (junction (at 220.98 124.46) (diameter 0) (color 0 0 0 0)
-    (uuid e2a3ab7c-204d-4fbd-ae2c-9c83b878ec32)
-  )
-  (junction (at 40.64 127) (diameter 0) (color 0 0 0 0)
-    (uuid f606e666-8264-4450-9cee-1d3aae913184)
-  )
-
-  (wire (pts (xy 139.7 69.85) (xy 139.7 101.6))
-    (stroke (width 0) (type default))
-    (uuid 04103ebb-1858-4729-a5e5-64b0b2982d0a)
-  )
-  (wire (pts (xy 60.96 50.8) (xy 71.12 50.8))
-    (stroke (width 0) (type default))
-    (uuid 044b914f-be1b-4e51-9262-665f581ea9df)
-  )
-  (wire (pts (xy 40.64 116.84) (xy 40.64 127))
-    (stroke (width 0) (type default))
-    (uuid 07bd6342-b989-44b5-ad0b-ee27edd79559)
-  )
-  (wire (pts (xy 146.05 80.01) (xy 137.16 80.01))
-    (stroke (width 0) (type default))
-    (uuid 082778a7-c622-44b6-9039-9ae9f6c7c2a6)
-  )
-  (wire (pts (xy 40.64 59.69) (xy 40.64 71.12))
-    (stroke (width 0) (type default))
-    (uuid 0f800991-d3b9-4750-83b4-2c2ebeef662b)
-  )
-  (wire (pts (xy 220.98 124.46) (xy 220.98 127))
-    (stroke (width 0) (type default))
-    (uuid 1474264f-c9f4-4415-9ade-ded32cfd2418)
-  )
-  (wire (pts (xy 118.11 93.98) (xy 118.11 102.87))
-    (stroke (width 0) (type default))
-    (uuid 161695c9-1ea6-449d-b59e-24872a7cdc5b)
-  )
-  (wire (pts (xy 40.64 50.8) (xy 40.64 59.69))
-    (stroke (width 0) (type default))
-    (uuid 19fd70e2-9aa7-4458-95a8-b1bf4efeb420)
-  )
-  (wire (pts (xy 88.9 116.84) (xy 99.06 116.84))
-    (stroke (width 0) (type default))
-    (uuid 1a35cc47-a26f-4ad6-bf1a-2bc2f2890ecd)
-  )
-  (wire (pts (xy 146.05 72.39) (xy 134.62 72.39))
-    (stroke (width 0) (type default))
-    (uuid 1b40db82-d27e-4a1a-bb06-cecfec3d0266)
-  )
-  (wire (pts (xy 132.08 77.47) (xy 132.08 71.12))
-    (stroke (width 0) (type default))
-    (uuid 245379ca-39ac-44ca-b068-3ef90c26e880)
-  )
-  (wire (pts (xy 78.74 127) (xy 88.9 127))
-    (stroke (width 0) (type default))
-    (uuid 24c19947-e369-48b1-8433-156183b9c1cf)
-  )
-  (wire (pts (xy 234.95 124.46) (xy 220.98 124.46))
-    (stroke (width 0) (type default))
-    (uuid 276533b4-fe7a-4fc3-9dd3-8d42e64f047e)
-  )
-  (wire (pts (xy 137.16 59.69) (xy 137.16 80.01))
-    (stroke (width 0) (type default))
-    (uuid 27765e2e-93da-4c04-b889-8a8aaf698e32)
-  )
-  (wire (pts (xy 50.8 71.12) (xy 40.64 71.12))
-    (stroke (width 0) (type default))
-    (uuid 285306fe-ced4-4fdc-9e15-2e474451df82)
-  )
-  (wire (pts (xy 40.64 80.01) (xy 40.64 93.98))
-    (stroke (width 0) (type default))
-    (uuid 28f25592-04e2-4405-8288-c5a39e0af0be)
-  )
-  (wire (pts (xy 210.82 116.84) (xy 210.82 107.95))
-    (stroke (width 0) (type default))
-    (uuid 342d957e-6ae2-4aca-b99b-5101ac2981aa)
-  )
-  (wire (pts (xy 114.3 80.01) (xy 114.3 74.93))
-    (stroke (width 0) (type default))
-    (uuid 3c4773f9-758f-4dc5-bc10-b58a8ff19f29)
-  )
-  (wire (pts (xy 220.98 121.92) (xy 220.98 124.46))
-    (stroke (width 0) (type default))
-    (uuid 3dc356b6-2b1f-439f-9371-66c5fd99b2cf)
-  )
-  (wire (pts (xy 114.3 116.84) (xy 210.82 116.84))
-    (stroke (width 0) (type default))
-    (uuid 43ba08e7-9240-4a94-87e4-c1c7d2792e8d)
-  )
-  (wire (pts (xy 207.01 90.17) (xy 207.01 101.6))
-    (stroke (width 0) (type default))
-    (uuid 45a31a07-1fb8-40fc-b890-5bdb1a05ec61)
-  )
-  (wire (pts (xy 40.64 93.98) (xy 40.64 102.87))
-    (stroke (width 0) (type default))
-    (uuid 46b3ca2e-4f43-496f-b532-3d590fb160a4)
-  )
-  (wire (pts (xy 50.8 50.8) (xy 40.64 50.8))
-    (stroke (width 0) (type default))
-    (uuid 47af2532-2a59-4cb5-8b34-e664505a0425)
-  )
-  (wire (pts (xy 161.29 90.17) (xy 207.01 90.17))
-    (stroke (width 0) (type default))
-    (uuid 47c4fc4e-c44d-4ce7-bc40-af2f54a2eced)
-  )
-  (wire (pts (xy 234.95 107.95) (xy 234.95 114.3))
-    (stroke (width 0) (type default))
-    (uuid 496d9c09-1190-4a52-9d3a-6dc46f4a781e)
-  )
-  (wire (pts (xy 146.05 77.47) (xy 132.08 77.47))
-    (stroke (width 0) (type default))
-    (uuid 51a762be-6a93-4972-9bc5-eea65a07f89e)
-  )
-  (wire (pts (xy 60.96 102.87) (xy 71.12 102.87))
-    (stroke (width 0) (type default))
-    (uuid 5222596d-0944-46a6-9564-814652f2fb8f)
-  )
-  (wire (pts (xy 134.62 72.39) (xy 134.62 80.01))
-    (stroke (width 0) (type default))
-    (uuid 53588f41-27ab-4582-8308-aab37cd7d3da)
-  )
-  (wire (pts (xy 60.96 59.69) (xy 71.12 59.69))
-    (stroke (width 0) (type default))
-    (uuid 553b471f-7e5f-4381-98ba-0c85c51482d0)
-  )
-  (wire (pts (xy 146.05 82.55) (xy 142.24 82.55))
-    (stroke (width 0) (type default))
-    (uuid 586d7b93-5468-44ba-9ace-26e56cfd80fb)
-  )
-  (wire (pts (xy 50.8 93.98) (xy 40.64 93.98))
-    (stroke (width 0) (type default))
-    (uuid 5bc98935-a414-489c-9e98-b82cbf6f2c43)
-  )
-  (wire (pts (xy 88.9 133.35) (xy 88.9 127))
-    (stroke (width 0) (type default))
-    (uuid 62c539c3-bc02-4ae7-a3d3-c5b0a47b6942)
-  )
-  (wire (pts (xy 146.05 69.85) (xy 139.7 69.85))
-    (stroke (width 0) (type default))
-    (uuid 62c6a114-0926-4136-aa0b-b9cb9681b0a2)
-  )
-  (wire (pts (xy 78.74 59.69) (xy 137.16 59.69))
-    (stroke (width 0) (type default))
-    (uuid 62cd6249-7864-4b1a-af42-9942ed854ea5)
-  )
-  (wire (pts (xy 220.98 107.95) (xy 234.95 107.95))
-    (stroke (width 0) (type default))
-    (uuid 6f00fe29-8fcc-4c91-92d9-6831e1c80322)
-  )
-  (wire (pts (xy 78.74 80.01) (xy 114.3 80.01))
-    (stroke (width 0) (type default))
-    (uuid 6fdadd24-d911-44f7-865e-f7202c88f523)
-  )
-  (wire (pts (xy 50.8 59.69) (xy 40.64 59.69))
-    (stroke (width 0) (type default))
-    (uuid 704d2893-8873-4436-ae7c-804384c1a40c)
-  )
-  (wire (pts (xy 207.01 69.85) (xy 207.01 90.17))
-    (stroke (width 0) (type default))
-    (uuid 71dbfbc9-ec28-4b19-a472-277a418762cc)
-  )
-  (wire (pts (xy 50.8 116.84) (xy 40.64 116.84))
-    (stroke (width 0) (type default))
-    (uuid 7c21264b-e4bb-411b-b870-a2cda2752079)
-  )
-  (wire (pts (xy 210.82 107.95) (xy 220.98 107.95))
-    (stroke (width 0) (type default))
-    (uuid 7e50df4a-e841-4fa8-90e5-b910e2fdc75b)
-  )
-  (wire (pts (xy 40.64 127) (xy 50.8 127))
-    (stroke (width 0) (type default))
-    (uuid 817288cc-c606-4b2e-87a6-f7e2ab1c7004)
-  )
-  (wire (pts (xy 139.7 101.6) (xy 157.48 101.6))
-    (stroke (width 0) (type default))
-    (uuid 8385e55b-c899-476f-be51-bca54bcddfe9)
-  )
-  (wire (pts (xy 78.74 50.8) (xy 142.24 50.8))
-    (stroke (width 0) (type default))
-    (uuid 852ea5b7-aa52-43cd-ad0a-17ed8bcea97b)
-  )
-  (wire (pts (xy 40.64 71.12) (xy 40.64 80.01))
-    (stroke (width 0) (type default))
-    (uuid 89b27612-4a6e-491e-b679-625e7b5a3836)
-  )
-  (wire (pts (xy 78.74 116.84) (xy 88.9 116.84))
-    (stroke (width 0) (type default))
-    (uuid 8e307e63-ada8-41ca-899f-0c7e12f88548)
-  )
-  (wire (pts (xy 78.74 71.12) (xy 132.08 71.12))
-    (stroke (width 0) (type default))
-    (uuid 9515e45a-282a-40d8-a2f9-969e16623257)
-  )
-  (wire (pts (xy 161.29 54.61) (xy 161.29 59.69))
-    (stroke (width 0) (type default))
-    (uuid 99d68777-faae-456b-9fcb-cd0ab83fe554)
-  )
-  (wire (pts (xy 50.8 80.01) (xy 40.64 80.01))
-    (stroke (width 0) (type default))
-    (uuid 9e3eb278-e3e8-40a2-996a-908db85102df)
-  )
-  (wire (pts (xy 40.64 127) (xy 40.64 133.35))
-    (stroke (width 0) (type default))
-    (uuid a1efe317-8e39-462d-8146-624b92b74bd1)
-  )
-  (wire (pts (xy 60.96 127) (xy 71.12 127))
-    (stroke (width 0) (type default))
-    (uuid ac3cdcd0-1137-42c9-8146-efed621a5db1)
-  )
-  (wire (pts (xy 88.9 127) (xy 88.9 116.84))
-    (stroke (width 0) (type default))
-    (uuid aecac9f0-a16b-4c99-b8ba-80be464bda29)
-  )
-  (wire (pts (xy 60.96 80.01) (xy 71.12 80.01))
-    (stroke (width 0) (type default))
-    (uuid b41e7b64-22cd-4160-a500-4983c52a3abf)
-  )
-  (wire (pts (xy 114.3 74.93) (xy 146.05 74.93))
-    (stroke (width 0) (type default))
-    (uuid b95d0643-ca7d-4231-9998-0086a4015ae1)
-  )
-  (wire (pts (xy 78.74 102.87) (xy 118.11 102.87))
-    (stroke (width 0) (type default))
-    (uuid c4924ad3-fece-4c2d-b30d-ed28ade14bcf)
-  )
-  (wire (pts (xy 50.8 133.35) (xy 40.64 133.35))
-    (stroke (width 0) (type default))
-    (uuid c9ffd15b-c86a-4dd8-8e01-8ebe3abddf9b)
-  )
-  (wire (pts (xy 220.98 69.85) (xy 220.98 74.93))
-    (stroke (width 0) (type default))
-    (uuid cbcbc08b-9549-4fa6-8459-177fab7de73e)
-  )
-  (wire (pts (xy 50.8 102.87) (xy 40.64 102.87))
-    (stroke (width 0) (type default))
-    (uuid cbee1951-aee8-489f-8888-1af75b29b654)
-  )
-  (wire (pts (xy 220.98 100.33) (xy 220.98 107.95))
-    (stroke (width 0) (type default))
-    (uuid cdde9303-a027-44c7-8291-42874f624e92)
-  )
-  (wire (pts (xy 220.98 107.95) (xy 220.98 114.3))
-    (stroke (width 0) (type default))
-    (uuid d30c15a4-f6b7-4688-af60-5ef6d0b23e19)
-  )
-  (wire (pts (xy 78.74 93.98) (xy 118.11 93.98))
-    (stroke (width 0) (type default))
-    (uuid d7dce68c-8e65-4352-9819-42749e0ca1dc)
-  )
-  (wire (pts (xy 165.1 101.6) (xy 207.01 101.6))
-    (stroke (width 0) (type default))
-    (uuid e0031e59-8850-4785-8cfa-46e45994fe32)
-  )
-  (wire (pts (xy 118.11 80.01) (xy 134.62 80.01))
-    (stroke (width 0) (type default))
-    (uuid e037dba1-b79d-434a-be4c-a75ca73ebb28)
-  )
-  (wire (pts (xy 60.96 133.35) (xy 71.12 133.35))
-    (stroke (width 0) (type default))
-    (uuid e33d91f0-5d88-4fe1-9be0-e58333458a4e)
-  )
-  (wire (pts (xy 78.74 133.35) (xy 88.9 133.35))
-    (stroke (width 0) (type default))
-    (uuid e5cbfdb7-9e91-4501-978b-e0c1abbc1bab)
-  )
-  (wire (pts (xy 207.01 69.85) (xy 220.98 69.85))
-    (stroke (width 0) (type default))
-    (uuid eb025bfa-feac-434d-a5df-cbcffe8f3777)
-  )
-  (wire (pts (xy 234.95 121.92) (xy 234.95 124.46))
-    (stroke (width 0) (type default))
-    (uuid ebb314eb-a6ec-4705-91c0-beaed2f0a607)
-  )
-  (wire (pts (xy 60.96 116.84) (xy 71.12 116.84))
-    (stroke (width 0) (type default))
-    (uuid ecdcb9f7-da76-41fa-901c-545d03ef22ab)
-  )
-  (wire (pts (xy 60.96 93.98) (xy 71.12 93.98))
-    (stroke (width 0) (type default))
-    (uuid f43004c6-7fe1-4869-b31e-a1c5da1a4378)
-  )
-  (wire (pts (xy 142.24 50.8) (xy 142.24 82.55))
-    (stroke (width 0) (type default))
-    (uuid f4426433-e0b4-4fca-8783-2290b66237c8)
-  )
-  (wire (pts (xy 40.64 102.87) (xy 40.64 116.84))
-    (stroke (width 0) (type default))
-    (uuid f8788154-9680-40a1-b32f-e1d2afbf56a9)
-  )
-  (wire (pts (xy 118.11 80.01) (xy 118.11 93.98))
-    (stroke (width 0) (type default))
-    (uuid f97b57a7-a0a3-4e0d-a5bc-61b044a192ad)
-  )
-  (wire (pts (xy 40.64 133.35) (xy 40.64 134.62))
-    (stroke (width 0) (type default))
-    (uuid fa2995db-14e3-449f-b701-c31b541de378)
-  )
-  (wire (pts (xy 60.96 71.12) (xy 71.12 71.12))
-    (stroke (width 0) (type default))
-    (uuid ff034ad9-4406-40c7-99d2-9e0d7a21fcc5)
-  )
-
-  (text "Tail" (at 60.96 55.88 0)
-    (effects (font (size 1.524 1.524)) (justify left bottom))
-    (uuid 63e2f909-085a-4763-afaf-7ff8c88cede6)
-  )
-  (text "Strobe Lights" (at 63.5 99.06 0)
-    (effects (font (size 1.524 1.524)) (justify left bottom))
-    (uuid 83c4cfa1-8063-4843-830c-55e59350cd8f)
-  )
-  (text "Landing/Taxi" (at 62.23 114.3 0)
-    (effects (font (size 1.524 1.524)) (justify left bottom))
-    (uuid c131228a-d920-424c-af57-96a1e0e81a1d)
-  )
-  (text "Beacon" (at 60.96 48.26 0)
-    (effects (font (size 1.524 1.524)) (justify left bottom))
-    (uuid d55ebcef-ddef-474e-86af-6b919ecabc3f)
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:LED-RESCUE-airplane-keychain") (at 55.88 50.8 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000058d8009c)
-    (property "Reference" "D1" (at 55.88 48.26 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "LED" (at 55.88 53.34 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "LED_THT:LED_D3.0mm" (at 55.88 50.8 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 55.88 50.8 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (pin "1" (uuid 5a84132f-afd9-4c4f-953f-fe0d987c9acb))
-    (pin "2" (uuid 14c63668-7e8c-4a6d-a50f-e1e678a0d06b))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "D1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:LED-RESCUE-airplane-keychain") (at 55.88 59.69 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000058d80133)
-    (property "Reference" "D2" (at 55.88 57.15 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "LED" (at 55.88 62.23 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "LED_THT:LED_D3.0mm" (at 55.88 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 55.88 59.69 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (pin "1" (uuid 3ae6bd52-32fd-4500-99eb-6399b660eeb6))
-    (pin "2" (uuid c51a99f2-2c61-4c91-b029-6b55e1187433))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "D2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:LED-RESCUE-airplane-keychain") (at 55.88 71.12 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000058d8018c)
-    (property "Reference" "D3" (at 55.88 68.58 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "LED" (at 55.88 73.66 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "LED_THT:LED_D3.0mm" (at 55.88 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 55.88 71.12 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (pin "1" (uuid 933062c8-b1cc-41ec-9ffe-695c09ffc33e))
-    (pin "2" (uuid 9967f1b4-5b5c-4f5d-a54a-97e1e99c6691))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "D3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:LED-RESCUE-airplane-keychain") (at 55.88 80.01 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000058d8023b)
-    (property "Reference" "D4" (at 55.88 77.47 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "LED" (at 55.88 82.55 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "LED_THT:LED_D3.0mm" (at 55.88 80.01 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 55.88 80.01 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (pin "1" (uuid a6b8682e-d23d-40fe-94c2-5e89cbbb5efa))
-    (pin "2" (uuid f856bbb2-86f8-407e-a013-966899d2435b))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "D4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:LED-RESCUE-airplane-keychain") (at 55.88 93.98 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000058d8036c)
-    (property "Reference" "D5" (at 55.88 91.44 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "LED" (at 55.88 96.52 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "LED_THT:LED_D3.0mm" (at 55.88 93.98 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 55.88 93.98 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (pin "1" (uuid 3e30f9e2-b078-4f2b-846a-4cf89a0b0422))
-    (pin "2" (uuid 11e8a1c8-9a0e-48c7-a0d6-ade4e11d9dbb))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "D5") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:LED-RESCUE-airplane-keychain") (at 55.88 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000058d80aa4)
-    (property "Reference" "D6" (at 55.88 100.33 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "LED" (at 55.88 105.41 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "LED_THT:LED_D3.0mm" (at 55.88 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 55.88 102.87 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (pin "1" (uuid cc6031df-e197-4d6b-b42a-8dab17b1ce1d))
-    (pin "2" (uuid f59a1479-8547-4053-9896-c40f24bae16f))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "D6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:LED-RESCUE-airplane-keychain") (at 55.88 116.84 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000058d8158b)
-    (property "Reference" "D7" (at 55.88 114.3 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "LED" (at 55.88 119.38 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "LED_THT:LED_D3.0mm" (at 55.88 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 55.88 116.84 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (pin "1" (uuid a7e5c7a5-ca00-4401-89db-cedb93843c1f))
-    (pin "2" (uuid 6c94ecfd-40d3-4a6f-80c2-28e5760572c7))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "D7") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:SW_PUSH") (at 106.68 116.84 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000058d81c3d)
-    (property "Reference" "SW1" (at 110.49 114.046 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SW_PUSH" (at 106.68 118.872 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm" (at 106.68 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 106.68 116.84 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (pin "1" (uuid 5aa69a85-8ad7-4574-b05f-9928012d0c0a))
-    (pin "2" (uuid 8ed2adc5-c634-4a65-be00-12770e7fd086))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "SW1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:SPST") (at 220.98 87.63 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000058d82980)
-    (property "Reference" "SW2" (at 223.52 87.63 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SPST" (at 218.44 87.63 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_THT:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W7.62mm_P2.54mm" (at 220.98 87.63 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 220.98 87.63 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (pin "1" (uuid 3c7c4fd6-36b8-452b-a95c-87c1366a6bf1))
-    (pin "2" (uuid 235a97d7-8a30-4364-8b1e-f9f47af1e497))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "SW2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:GND") (at 161.29 54.61 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000058d82aed)
-    (property "Reference" "#PWR01" (at 161.29 48.26 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 161.29 50.8 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 161.29 54.61 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Datasheet" "" (at 161.29 54.61 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (pin "1" (uuid 5dedbade-0134-4613-8089-b71b44f805a5))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "#PWR01") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:GND") (at 220.98 127 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000058d82b27)
-    (property "Reference" "#PWR02" (at 220.98 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 220.98 130.81 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 220.98 127 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Datasheet" "" (at 220.98 127 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (pin "1" (uuid 7db1dce9-3122-4782-8001-dfa68d869b6b))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "#PWR02") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:GND") (at 40.64 134.62 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000058d83834)
-    (property "Reference" "#PWR03" (at 40.64 140.97 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 40.64 138.43 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 40.64 134.62 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Datasheet" "" (at 40.64 134.62 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (pin "1" (uuid bebb3702-1524-43ea-897d-06750e9edd97))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "#PWR03") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:R") (at 74.93 50.8 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000058e07a9a)
-    (property "Reference" "R1" (at 74.93 52.832 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100" (at 74.93 50.8 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" (at 74.93 49.022 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 74.93 50.8 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5c11689e-d072-4653-b960-857e806b19dc))
-    (pin "2" (uuid 653fb441-a83f-4fac-9658-c5fe8ed23d7e))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "R1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:R") (at 74.93 59.69 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000058e07b96)
-    (property "Reference" "R2" (at 74.93 61.722 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100" (at 74.93 59.69 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" (at 74.93 57.912 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 74.93 59.69 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 59d93977-e4b7-4beb-b697-6350f08eeb0a))
-    (pin "2" (uuid 0f1ebb24-4346-44ae-b110-1acdcb9424ea))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "R2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:R") (at 74.93 71.12 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000058e07bff)
-    (property "Reference" "R3" (at 74.93 73.152 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100" (at 74.93 71.12 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" (at 74.93 69.342 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 74.93 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 461ba1f2-b036-4156-8a8f-fe5de41fd16f))
-    (pin "2" (uuid 0f4a487c-9dec-4911-be81-fdf23d6cb27e))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "R3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:R") (at 74.93 80.01 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000058e07c60)
-    (property "Reference" "R4" (at 74.93 82.042 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100" (at 74.93 80.01 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" (at 74.93 78.232 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 74.93 80.01 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e738efef-92a7-4adc-ae71-64932deae649))
-    (pin "2" (uuid 789bf09f-918f-4625-81cd-18fa90ca1a5e))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "R4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:R") (at 74.93 116.84 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000058e07d29)
-    (property "Reference" "R5" (at 74.93 118.872 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100" (at 74.93 116.84 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" (at 74.93 115.062 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 74.93 116.84 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid dee9bce5-38e1-404c-95ba-9411b7d79bdd))
-    (pin "2" (uuid 3d77ac46-bda3-441d-b3e5-af0f8a02932f))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "R5") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:Battery_Cell") (at 234.95 119.38 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000058e71486)
-    (property "Reference" "BT2" (at 237.49 116.84 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Battery_Cell" (at 237.49 119.38 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Battery:BatteryHolder_Keystone_1058_1x2032" (at 234.95 117.856 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 234.95 117.856 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9edb26ae-b698-44ab-a362-6bb886502c70))
-    (pin "2" (uuid 7c18fe1d-08dc-4af2-acda-0119274af45a))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "BT2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:Battery_Cell") (at 220.98 119.38 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000058e7150b)
-    (property "Reference" "BT1" (at 223.52 116.84 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Battery_Cell" (at 223.52 119.38 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Battery:BatteryHolder_Keystone_1058_1x2032" (at 220.98 117.856 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 220.98 117.856 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 97506743-6913-40bc-a7c4-0ab3c2942822))
-    (pin "2" (uuid eaef733a-e943-46be-95ce-d7878ee9056a))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "BT1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:R") (at 161.29 101.6 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-0000590667e2)
-    (property "Reference" "R6" (at 161.29 103.632 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "10k" (at 161.29 101.6 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" (at 161.29 99.822 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 161.29 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 980b6380-9fa5-4099-ae33-5f746e01ae75))
-    (pin "2" (uuid 07c1ab65-cd24-448f-affe-fd84b8919216))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "R6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:R") (at 74.93 102.87 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 071c6966-f1b5-4a5c-856a-aa325742d97c)
-    (property "Reference" "R8" (at 74.93 104.902 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100" (at 74.93 102.87 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" (at 74.93 101.092 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 74.93 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6eaced4b-b191-4a59-ad6b-7220374e4697))
-    (pin "2" (uuid 0f4b2f89-6a7d-4ae2-b5ec-38776d3404bc))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "R8") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:LED-RESCUE-airplane-keychain") (at 55.88 133.35 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 08fceb26-1eea-48dc-8f65-8780cd5186d1)
-    (property "Reference" "D9" (at 55.88 130.81 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "LED" (at 55.88 135.89 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "LED_THT:LED_D3.0mm" (at 55.88 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 55.88 133.35 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (pin "1" (uuid 5ad0739d-ea42-4fec-9fee-698b0bc5e27d))
-    (pin "2" (uuid 602d4fb8-1e53-4410-ac1b-fcc3d67624b1))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "D9") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 40.64 157.48 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 4d51a555-7387-4424-9427-3ede1a339b1f)
-    (property "Reference" "H1" (at 43.18 156.21 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 43.18 158.75 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "MountingHole:MountingHole_4.3mm_M4" (at 40.64 157.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 40.64 157.48 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "H1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:R") (at 74.93 127 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 5436c389-93b1-4253-8929-1cffc32ebd2f)
-    (property "Reference" "R9" (at 74.93 129.032 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100" (at 74.93 127 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" (at 74.93 125.222 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 74.93 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a49dc06f-87e2-4e02-9005-787f1dfee4e5))
-    (pin "2" (uuid 43096967-ac7c-4c92-ae21-7e8a8477e42a))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "R9") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "MCU_Microchip_ATtiny:ATtiny85-20P") (at 161.29 74.93 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 6940754a-dc9e-4490-b709-f068d911ffe6)
-    (property "Reference" "U1" (at 175.26 74.295 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Value" "ATtiny85-20P" (at 175.26 76.835 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "Package_DIP:DIP-8_W7.62mm" (at 161.29 74.93 0)
-      (effects (font (size 1.27 1.27) italic) hide)
-    )
-    (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" (at 161.29 74.93 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid caba6566-cf95-4214-a3c9-526d090be77e))
-    (pin "2" (uuid 4eb2cc6f-6e42-456f-b8e9-97fb2083e235))
-    (pin "3" (uuid 16df3c24-058f-4f67-8a24-a2307936f2a1))
-    (pin "4" (uuid 72b842de-2689-4b93-9227-b66453191083))
-    (pin "5" (uuid b3a03942-44df-4063-a6bc-fb88f6042d3d))
-    (pin "6" (uuid c7553e8c-9566-4ea6-b3d8-184d82f54968))
-    (pin "7" (uuid c8ffdd0b-41aa-458d-bb42-36c7bcfe4de7))
-    (pin "8" (uuid 881bed1b-c3d5-4364-a532-021e5846d31e))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "U1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:LED-RESCUE-airplane-keychain") (at 55.88 127 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 701a185b-679b-421d-827f-e41eca39b14f)
-    (property "Reference" "D8" (at 55.88 124.46 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "LED" (at 55.88 129.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "LED_THT:LED_D3.0mm" (at 55.88 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 55.88 127 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (pin "1" (uuid a4afebdc-3abf-428d-8e2b-43c7a1e5a2a7))
-    (pin "2" (uuid 49aaf523-c318-476c-8285-3041bd850e56))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "D8") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:R") (at 74.93 133.35 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 76be8d9f-f998-4acb-8428-39fe274d49bc)
-    (property "Reference" "R10" (at 74.93 135.382 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100" (at 74.93 133.35 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" (at 74.93 131.572 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 74.93 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 43fc20c6-01b5-4f03-8cbe-437705367248))
-    (pin "2" (uuid 8208f8ce-4b96-47af-aebf-1902d6c4a308))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "R10") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "airplane-keychain-rescue:R") (at 74.93 93.98 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid ef6d67db-b694-4462-8c6b-b65f0d866784)
-    (property "Reference" "R7" (at 74.93 96.012 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "100" (at 74.93 93.98 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" (at 74.93 92.202 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 74.93 93.98 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1f3ab43f-8c00-4b63-a042-9a289ae459bb))
-    (pin "2" (uuid d35d182b-e523-4040-9641-63ba7d35dbcd))
-    (instances
-      (project "airplane-keychain"
-        (path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
-          (reference "R7") (unit 1)
-        )
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "6cfc2c66-5048-4a9e-b97d-b82fde315677")
+	(paper "A4")
+	(title_block
+		(title "ISGC Keychain")
+		(date "2024-03-21")
+		(rev "C")
+		(company "Make to Innovate")
+		(comment 1 "Matthew E. Nelson")
+		(comment 2 "ISGC Badge")
+	)
+	(lib_symbols
+		(symbol "MCU_Microchip_ATtiny:ATtiny85-20P"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -12.7 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "ATtiny85-20P"
+				(at 2.54 -13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "20MHz, 8kB Flash, 512B SRAM, 512B EEPROM, debugWIRE, DIP-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "AVR 8bit Microcontroller tinyAVR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "DIP*W7.62mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ATtiny85-20P_0_1"
+				(rectangle
+					(start -12.7 -12.7)
+					(end 12.7 12.7)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "ATtiny85-20P_1_1"
+				(pin bidirectional line
+					(at 15.24 -5.08 180)
+					(length 2.54)
+					(name "~{RESET}/PB5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 0 180)
+					(length 2.54)
+					(name "XTAL1/PB3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -2.54 180)
+					(length 2.54)
+					(name "XTAL2/PB4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -15.24 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 7.62 180)
+					(length 2.54)
+					(name "AREF/PB0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 5.08 180)
+					(length 2.54)
+					(name "PB1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 2.54 180)
+					(length 2.54)
+					(name "PB2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 15.24 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+		(symbol "airplane-keychain-rescue:Battery_Cell"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "BT"
+				(at 2.54 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Battery_Cell"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Battery_Cell_0_1"
+				(rectangle
+					(start -2.286 1.778)
+					(end 2.286 1.524)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.5748 1.1938)
+					(end 1.4732 0.6858)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 3.429) (xy 1.524 3.429)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 3.937) (xy 1.016 2.921)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Battery_Cell_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "airplane-keychain-rescue:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "airplane-keychain-rescue:LED-RESCUE-airplane-keychain"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED-RESCUE-airplane-keychain"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED-3MM LED-5MM LED-10MM LED-0603 LED-0805 LED-1206 LEDV"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED-RESCUE-airplane-keychain_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.635) (xy -3.175 -1.651) (xy -3.048 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.651 -1.016) (xy -2.794 -2.032) (xy -2.667 -1.397)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "LED-RESCUE-airplane-keychain_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "K"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "airplane-keychain-rescue:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_* R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "airplane-keychain-rescue:SPST"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SPST"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SPST_0_0"
+				(circle
+					(center -3.81 0)
+					(radius 1.27)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.81 0)
+					(radius 1.27)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SPST_1_1"
+				(pin input line
+					(at -12.7 0 0)
+					(length 7.62)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 0 180)
+					(length 7.62)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "airplane-keychain-rescue:SW_PUSH"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 3.81 2.794 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_PUSH"
+				(at 0 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_PUSH_0_1"
+				(rectangle
+					(start -4.318 1.27)
+					(end 4.318 1.524)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.524) (xy -0.762 2.286) (xy 0.762 2.286) (xy 1.016 1.524)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive inverted
+					(at -7.62 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive inverted
+					(at 7.62 0 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 40.64 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "00850661-1378-4efd-a4b1-c3817f34df4c")
+	)
+	(junction
+		(at 40.64 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ac695fe-2dac-4fdc-84e4-2eef7cbd8d65")
+	)
+	(junction
+		(at 40.64 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e6bb37c-98ea-491d-93a7-c6425ae0f254")
+	)
+	(junction
+		(at 40.64 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "205d99df-99cc-4c66-8501-c2efefcb126c")
+	)
+	(junction
+		(at 40.64 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "23561d7d-7843-433a-bcfd-bbd746b09dd3")
+	)
+	(junction
+		(at 88.9 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4d4c6203-752d-4881-b531-5169d1b21a6e")
+	)
+	(junction
+		(at 118.11 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5da2084e-3967-4392-b6d9-a8201fd700a8")
+	)
+	(junction
+		(at 88.9 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6514ca81-9dda-48eb-987b-657ba45d8d58")
+	)
+	(junction
+		(at 207.01 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ace0296-88a6-4a0e-b0e7-5b278150a8a5")
+	)
+	(junction
+		(at 40.64 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "af4f6ad6-771e-400c-9159-e72aac6b7a40")
+	)
+	(junction
+		(at 220.98 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5481589-f7d2-4910-a082-85088ab3b2d7")
+	)
+	(junction
+		(at 40.64 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6020cbe-9f47-4403-8c92-be3709915f27")
+	)
+	(junction
+		(at 220.98 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e2a3ab7c-204d-4fbd-ae2c-9c83b878ec32")
+	)
+	(junction
+		(at 40.64 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f606e666-8264-4450-9cee-1d3aae913184")
+	)
+	(wire
+		(pts
+			(xy 139.7 69.85) (xy 139.7 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04103ebb-1858-4729-a5e5-64b0b2982d0a")
+	)
+	(wire
+		(pts
+			(xy 60.96 50.8) (xy 71.12 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "044b914f-be1b-4e51-9262-665f581ea9df")
+	)
+	(wire
+		(pts
+			(xy 40.64 116.84) (xy 40.64 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07bd6342-b989-44b5-ad0b-ee27edd79559")
+	)
+	(wire
+		(pts
+			(xy 146.05 80.01) (xy 137.16 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "082778a7-c622-44b6-9039-9ae9f6c7c2a6")
+	)
+	(wire
+		(pts
+			(xy 40.64 59.69) (xy 40.64 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f800991-d3b9-4750-83b4-2c2ebeef662b")
+	)
+	(wire
+		(pts
+			(xy 220.98 124.46) (xy 220.98 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1474264f-c9f4-4415-9ade-ded32cfd2418")
+	)
+	(wire
+		(pts
+			(xy 118.11 93.98) (xy 118.11 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "161695c9-1ea6-449d-b59e-24872a7cdc5b")
+	)
+	(wire
+		(pts
+			(xy 40.64 50.8) (xy 40.64 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19fd70e2-9aa7-4458-95a8-b1bf4efeb420")
+	)
+	(wire
+		(pts
+			(xy 88.9 116.84) (xy 99.06 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a35cc47-a26f-4ad6-bf1a-2bc2f2890ecd")
+	)
+	(wire
+		(pts
+			(xy 146.05 72.39) (xy 134.62 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b40db82-d27e-4a1a-bb06-cecfec3d0266")
+	)
+	(wire
+		(pts
+			(xy 132.08 77.47) (xy 132.08 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "245379ca-39ac-44ca-b068-3ef90c26e880")
+	)
+	(wire
+		(pts
+			(xy 78.74 127) (xy 88.9 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24c19947-e369-48b1-8433-156183b9c1cf")
+	)
+	(wire
+		(pts
+			(xy 234.95 124.46) (xy 220.98 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "276533b4-fe7a-4fc3-9dd3-8d42e64f047e")
+	)
+	(wire
+		(pts
+			(xy 137.16 59.69) (xy 137.16 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27765e2e-93da-4c04-b889-8a8aaf698e32")
+	)
+	(wire
+		(pts
+			(xy 50.8 71.12) (xy 40.64 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "285306fe-ced4-4fdc-9e15-2e474451df82")
+	)
+	(wire
+		(pts
+			(xy 40.64 80.01) (xy 40.64 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28f25592-04e2-4405-8288-c5a39e0af0be")
+	)
+	(wire
+		(pts
+			(xy 210.82 116.84) (xy 210.82 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "342d957e-6ae2-4aca-b99b-5101ac2981aa")
+	)
+	(wire
+		(pts
+			(xy 114.3 80.01) (xy 114.3 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c4773f9-758f-4dc5-bc10-b58a8ff19f29")
+	)
+	(wire
+		(pts
+			(xy 220.98 121.92) (xy 220.98 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dc356b6-2b1f-439f-9371-66c5fd99b2cf")
+	)
+	(wire
+		(pts
+			(xy 114.3 116.84) (xy 210.82 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43ba08e7-9240-4a94-87e4-c1c7d2792e8d")
+	)
+	(wire
+		(pts
+			(xy 207.01 90.17) (xy 207.01 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45a31a07-1fb8-40fc-b890-5bdb1a05ec61")
+	)
+	(wire
+		(pts
+			(xy 40.64 93.98) (xy 40.64 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46b3ca2e-4f43-496f-b532-3d590fb160a4")
+	)
+	(wire
+		(pts
+			(xy 50.8 50.8) (xy 40.64 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47af2532-2a59-4cb5-8b34-e664505a0425")
+	)
+	(wire
+		(pts
+			(xy 161.29 90.17) (xy 207.01 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47c4fc4e-c44d-4ce7-bc40-af2f54a2eced")
+	)
+	(wire
+		(pts
+			(xy 234.95 107.95) (xy 234.95 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "496d9c09-1190-4a52-9d3a-6dc46f4a781e")
+	)
+	(wire
+		(pts
+			(xy 146.05 77.47) (xy 132.08 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51a762be-6a93-4972-9bc5-eea65a07f89e")
+	)
+	(wire
+		(pts
+			(xy 60.96 102.87) (xy 71.12 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5222596d-0944-46a6-9564-814652f2fb8f")
+	)
+	(wire
+		(pts
+			(xy 134.62 72.39) (xy 134.62 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53588f41-27ab-4582-8308-aab37cd7d3da")
+	)
+	(wire
+		(pts
+			(xy 60.96 59.69) (xy 71.12 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "553b471f-7e5f-4381-98ba-0c85c51482d0")
+	)
+	(wire
+		(pts
+			(xy 146.05 82.55) (xy 142.24 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "586d7b93-5468-44ba-9ace-26e56cfd80fb")
+	)
+	(wire
+		(pts
+			(xy 50.8 93.98) (xy 40.64 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bc98935-a414-489c-9e98-b82cbf6f2c43")
+	)
+	(wire
+		(pts
+			(xy 88.9 133.35) (xy 88.9 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62c539c3-bc02-4ae7-a3d3-c5b0a47b6942")
+	)
+	(wire
+		(pts
+			(xy 146.05 69.85) (xy 139.7 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62c6a114-0926-4136-aa0b-b9cb9681b0a2")
+	)
+	(wire
+		(pts
+			(xy 78.74 59.69) (xy 137.16 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62cd6249-7864-4b1a-af42-9942ed854ea5")
+	)
+	(wire
+		(pts
+			(xy 220.98 107.95) (xy 234.95 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f00fe29-8fcc-4c91-92d9-6831e1c80322")
+	)
+	(wire
+		(pts
+			(xy 78.74 80.01) (xy 114.3 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fdadd24-d911-44f7-865e-f7202c88f523")
+	)
+	(wire
+		(pts
+			(xy 50.8 59.69) (xy 40.64 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "704d2893-8873-4436-ae7c-804384c1a40c")
+	)
+	(wire
+		(pts
+			(xy 207.01 69.85) (xy 207.01 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71dbfbc9-ec28-4b19-a472-277a418762cc")
+	)
+	(wire
+		(pts
+			(xy 50.8 116.84) (xy 40.64 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c21264b-e4bb-411b-b870-a2cda2752079")
+	)
+	(wire
+		(pts
+			(xy 210.82 107.95) (xy 220.98 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e50df4a-e841-4fa8-90e5-b910e2fdc75b")
+	)
+	(wire
+		(pts
+			(xy 40.64 127) (xy 50.8 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "817288cc-c606-4b2e-87a6-f7e2ab1c7004")
+	)
+	(wire
+		(pts
+			(xy 139.7 101.6) (xy 157.48 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8385e55b-c899-476f-be51-bca54bcddfe9")
+	)
+	(wire
+		(pts
+			(xy 78.74 50.8) (xy 142.24 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "852ea5b7-aa52-43cd-ad0a-17ed8bcea97b")
+	)
+	(wire
+		(pts
+			(xy 40.64 71.12) (xy 40.64 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89b27612-4a6e-491e-b679-625e7b5a3836")
+	)
+	(wire
+		(pts
+			(xy 78.74 116.84) (xy 88.9 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e307e63-ada8-41ca-899f-0c7e12f88548")
+	)
+	(wire
+		(pts
+			(xy 78.74 71.12) (xy 132.08 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9515e45a-282a-40d8-a2f9-969e16623257")
+	)
+	(wire
+		(pts
+			(xy 161.29 54.61) (xy 161.29 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99d68777-faae-456b-9fcb-cd0ab83fe554")
+	)
+	(wire
+		(pts
+			(xy 50.8 80.01) (xy 40.64 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e3eb278-e3e8-40a2-996a-908db85102df")
+	)
+	(wire
+		(pts
+			(xy 40.64 127) (xy 40.64 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1efe317-8e39-462d-8146-624b92b74bd1")
+	)
+	(wire
+		(pts
+			(xy 60.96 127) (xy 71.12 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac3cdcd0-1137-42c9-8146-efed621a5db1")
+	)
+	(wire
+		(pts
+			(xy 88.9 127) (xy 88.9 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aecac9f0-a16b-4c99-b8ba-80be464bda29")
+	)
+	(wire
+		(pts
+			(xy 60.96 80.01) (xy 71.12 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b41e7b64-22cd-4160-a500-4983c52a3abf")
+	)
+	(wire
+		(pts
+			(xy 114.3 74.93) (xy 146.05 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b95d0643-ca7d-4231-9998-0086a4015ae1")
+	)
+	(wire
+		(pts
+			(xy 78.74 102.87) (xy 118.11 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4924ad3-fece-4c2d-b30d-ed28ade14bcf")
+	)
+	(wire
+		(pts
+			(xy 50.8 133.35) (xy 40.64 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9ffd15b-c86a-4dd8-8e01-8ebe3abddf9b")
+	)
+	(wire
+		(pts
+			(xy 220.98 69.85) (xy 220.98 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbcbc08b-9549-4fa6-8459-177fab7de73e")
+	)
+	(wire
+		(pts
+			(xy 50.8 102.87) (xy 40.64 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbee1951-aee8-489f-8888-1af75b29b654")
+	)
+	(wire
+		(pts
+			(xy 220.98 100.33) (xy 220.98 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdde9303-a027-44c7-8291-42874f624e92")
+	)
+	(wire
+		(pts
+			(xy 220.98 107.95) (xy 220.98 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d30c15a4-f6b7-4688-af60-5ef6d0b23e19")
+	)
+	(wire
+		(pts
+			(xy 78.74 93.98) (xy 118.11 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7dce68c-8e65-4352-9819-42749e0ca1dc")
+	)
+	(wire
+		(pts
+			(xy 165.1 101.6) (xy 207.01 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0031e59-8850-4785-8cfa-46e45994fe32")
+	)
+	(wire
+		(pts
+			(xy 118.11 80.01) (xy 134.62 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e037dba1-b79d-434a-be4c-a75ca73ebb28")
+	)
+	(wire
+		(pts
+			(xy 60.96 133.35) (xy 71.12 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e33d91f0-5d88-4fe1-9be0-e58333458a4e")
+	)
+	(wire
+		(pts
+			(xy 78.74 133.35) (xy 88.9 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5cbfdb7-9e91-4501-978b-e0c1abbc1bab")
+	)
+	(wire
+		(pts
+			(xy 207.01 69.85) (xy 220.98 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb025bfa-feac-434d-a5df-cbcffe8f3777")
+	)
+	(wire
+		(pts
+			(xy 234.95 121.92) (xy 234.95 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebb314eb-a6ec-4705-91c0-beaed2f0a607")
+	)
+	(wire
+		(pts
+			(xy 60.96 116.84) (xy 71.12 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecdcb9f7-da76-41fa-901c-545d03ef22ab")
+	)
+	(wire
+		(pts
+			(xy 60.96 93.98) (xy 71.12 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f43004c6-7fe1-4869-b31e-a1c5da1a4378")
+	)
+	(wire
+		(pts
+			(xy 142.24 50.8) (xy 142.24 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4426433-e0b4-4fca-8783-2290b66237c8")
+	)
+	(wire
+		(pts
+			(xy 40.64 102.87) (xy 40.64 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8788154-9680-40a1-b32f-e1d2afbf56a9")
+	)
+	(wire
+		(pts
+			(xy 118.11 80.01) (xy 118.11 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f97b57a7-a0a3-4e0d-a5bc-61b044a192ad")
+	)
+	(wire
+		(pts
+			(xy 40.64 133.35) (xy 40.64 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa2995db-14e3-449f-b701-c31b541de378")
+	)
+	(wire
+		(pts
+			(xy 60.96 71.12) (xy 71.12 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff034ad9-4406-40c7-99d2-9e0d7a21fcc5")
+	)
+	(text "Fading Star"
+		(exclude_from_sim no)
+		(at 60.96 55.88 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "63e2f909-085a-4763-afaf-7ff8c88cede6")
+	)
+	(text "Blinky Stars"
+		(exclude_from_sim no)
+		(at 63.5 99.06 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "83c4cfa1-8063-4843-830c-55e59350cd8f")
+	)
+	(text "Push Button Stars"
+		(exclude_from_sim no)
+		(at 62.23 114.3 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "c131228a-d920-424c-af57-96a1e0e81a1d")
+	)
+	(text "Fading Stars"
+		(exclude_from_sim no)
+		(at 60.96 48.26 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "d55ebcef-ddef-474e-86af-6b919ecabc3f")
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:LED-RESCUE-airplane-keychain")
+		(at 55.88 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000058d8009c")
+		(property "Reference" "D1"
+			(at 55.88 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 55.88 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 55.88 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a84132f-afd9-4c4f-953f-fe0d987c9acb")
+		)
+		(pin "2"
+			(uuid "14c63668-7e8c-4a6d-a50f-e1e678a0d06b")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:LED-RESCUE-airplane-keychain")
+		(at 55.88 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000058d80133")
+		(property "Reference" "D2"
+			(at 55.88 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 55.88 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 55.88 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ae6bd52-32fd-4500-99eb-6399b660eeb6")
+		)
+		(pin "2"
+			(uuid "c51a99f2-2c61-4c91-b029-6b55e1187433")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:LED-RESCUE-airplane-keychain")
+		(at 55.88 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000058d8018c")
+		(property "Reference" "D3"
+			(at 55.88 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 55.88 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 55.88 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "933062c8-b1cc-41ec-9ffe-695c09ffc33e")
+		)
+		(pin "2"
+			(uuid "9967f1b4-5b5c-4f5d-a54a-97e1e99c6691")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:LED-RESCUE-airplane-keychain")
+		(at 55.88 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000058d8023b")
+		(property "Reference" "D4"
+			(at 55.88 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 55.88 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 55.88 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6b8682e-d23d-40fe-94c2-5e89cbbb5efa")
+		)
+		(pin "2"
+			(uuid "f856bbb2-86f8-407e-a013-966899d2435b")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:LED-RESCUE-airplane-keychain")
+		(at 55.88 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000058d8036c")
+		(property "Reference" "D5"
+			(at 55.88 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 55.88 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 55.88 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3e30f9e2-b078-4f2b-846a-4cf89a0b0422")
+		)
+		(pin "2"
+			(uuid "11e8a1c8-9a0e-48c7-a0d6-ade4e11d9dbb")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:LED-RESCUE-airplane-keychain")
+		(at 55.88 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000058d80aa4")
+		(property "Reference" "D6"
+			(at 55.88 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 55.88 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 55.88 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cc6031df-e197-4d6b-b42a-8dab17b1ce1d")
+		)
+		(pin "2"
+			(uuid "f59a1479-8547-4053-9896-c40f24bae16f")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:LED-RESCUE-airplane-keychain")
+		(at 55.88 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000058d8158b")
+		(property "Reference" "D7"
+			(at 55.88 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 55.88 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 55.88 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a7e5c7a5-ca00-4401-89db-cedb93843c1f")
+		)
+		(pin "2"
+			(uuid "6c94ecfd-40d3-4a6f-80c2-28e5760572c7")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:SW_PUSH")
+		(at 106.68 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000058d81c3d")
+		(property "Reference" "SW1"
+			(at 110.49 114.046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_PUSH"
+			(at 106.68 118.872 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+			(at 106.68 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 106.68 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5aa69a85-8ad7-4574-b05f-9928012d0c0a")
+		)
+		(pin "2"
+			(uuid "8ed2adc5-c634-4a65-be00-12770e7fd086")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:SPST")
+		(at 220.98 87.63 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000058d82980")
+		(property "Reference" "SW2"
+			(at 223.52 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPST"
+			(at 218.44 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W7.62mm_P2.54mm"
+			(at 220.98 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3c7c4fd6-36b8-452b-a95c-87c1366a6bf1")
+		)
+		(pin "2"
+			(uuid "235a97d7-8a30-4364-8b1e-f9f47af1e497")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:GND")
+		(at 161.29 54.61 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000058d82aed")
+		(property "Reference" "#PWR01"
+			(at 161.29 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 161.29 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 161.29 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5dedbade-0134-4613-8089-b71b44f805a5")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:GND")
+		(at 220.98 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000058d82b27")
+		(property "Reference" "#PWR02"
+			(at 220.98 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 220.98 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7db1dce9-3122-4782-8001-dfa68d869b6b")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:GND")
+		(at 40.64 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000058d83834")
+		(property "Reference" "#PWR03"
+			(at 40.64 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 40.64 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 40.64 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bebb3702-1524-43ea-897d-06750e9edd97")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:R")
+		(at 74.93 50.8 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000058e07a9a")
+		(property "Reference" "R1"
+			(at 74.93 52.832 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 74.93 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+			(at 74.93 49.022 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5c11689e-d072-4653-b960-857e806b19dc")
+		)
+		(pin "2"
+			(uuid "653fb441-a83f-4fac-9658-c5fe8ed23d7e")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:R")
+		(at 74.93 59.69 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000058e07b96")
+		(property "Reference" "R2"
+			(at 74.93 61.722 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 74.93 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+			(at 74.93 57.912 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59d93977-e4b7-4beb-b697-6350f08eeb0a")
+		)
+		(pin "2"
+			(uuid "0f1ebb24-4346-44ae-b110-1acdcb9424ea")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:R")
+		(at 74.93 71.12 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000058e07bff")
+		(property "Reference" "R3"
+			(at 74.93 73.152 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 74.93 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+			(at 74.93 69.342 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "461ba1f2-b036-4156-8a8f-fe5de41fd16f")
+		)
+		(pin "2"
+			(uuid "0f4a487c-9dec-4911-be81-fdf23d6cb27e")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:R")
+		(at 74.93 80.01 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000058e07c60")
+		(property "Reference" "R4"
+			(at 74.93 82.042 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 74.93 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+			(at 74.93 78.232 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e738efef-92a7-4adc-ae71-64932deae649")
+		)
+		(pin "2"
+			(uuid "789bf09f-918f-4625-81cd-18fa90ca1a5e")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:R")
+		(at 74.93 116.84 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000058e07d29")
+		(property "Reference" "R5"
+			(at 74.93 118.872 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 74.93 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+			(at 74.93 115.062 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dee9bce5-38e1-404c-95ba-9411b7d79bdd")
+		)
+		(pin "2"
+			(uuid "3d77ac46-bda3-441d-b3e5-af0f8a02932f")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:Battery_Cell")
+		(at 234.95 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000058e71486")
+		(property "Reference" "BT2"
+			(at 237.49 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Battery_Cell"
+			(at 237.49 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Battery:BatteryHolder_Keystone_1058_1x2032"
+			(at 234.95 117.856 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 117.856 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 234.95 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9edb26ae-b698-44ab-a362-6bb886502c70")
+		)
+		(pin "2"
+			(uuid "7c18fe1d-08dc-4af2-acda-0119274af45a")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "BT2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:Battery_Cell")
+		(at 220.98 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000058e7150b")
+		(property "Reference" "BT1"
+			(at 223.52 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Battery_Cell"
+			(at 223.52 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Battery:BatteryHolder_Keystone_1058_1x2032"
+			(at 220.98 117.856 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 117.856 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97506743-6913-40bc-a7c4-0ab3c2942822")
+		)
+		(pin "2"
+			(uuid "eaef733a-e943-46be-95ce-d7878ee9056a")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:R")
+		(at 161.29 101.6 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-0000590667e2")
+		(property "Reference" "R6"
+			(at 161.29 103.632 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 161.29 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+			(at 161.29 99.822 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 161.29 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "980b6380-9fa5-4099-ae33-5f746e01ae75")
+		)
+		(pin "2"
+			(uuid "07c1ab65-cd24-448f-affe-fd84b8919216")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:R")
+		(at 74.93 102.87 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "071c6966-f1b5-4a5c-856a-aa325742d97c")
+		(property "Reference" "R8"
+			(at 74.93 104.902 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 74.93 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+			(at 74.93 101.092 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6eaced4b-b191-4a59-ad6b-7220374e4697")
+		)
+		(pin "2"
+			(uuid "0f4b2f89-6a7d-4ae2-b5ec-38776d3404bc")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:LED-RESCUE-airplane-keychain")
+		(at 55.88 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "08fceb26-1eea-48dc-8f65-8780cd5186d1")
+		(property "Reference" "D9"
+			(at 55.88 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 55.88 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 55.88 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ad0739d-ea42-4fec-9fee-698b0bc5e27d")
+		)
+		(pin "2"
+			(uuid "602d4fb8-1e53-4410-ac1b-fcc3d67624b1")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 40.64 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d51a555-7387-4424-9427-3ede1a339b1f")
+		(property "Reference" "H1"
+			(at 43.18 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 43.18 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4"
+			(at 40.64 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 40.64 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 40.64 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:R")
+		(at 74.93 127 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5436c389-93b1-4253-8929-1cffc32ebd2f")
+		(property "Reference" "R9"
+			(at 74.93 129.032 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 74.93 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+			(at 74.93 125.222 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a49dc06f-87e2-4e02-9005-787f1dfee4e5")
+		)
+		(pin "2"
+			(uuid "43096967-ac7c-4c92-ae21-7e8a8477e42a")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "MCU_Microchip_ATtiny:ATtiny85-20P")
+		(at 161.29 74.93 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6940754a-dc9e-4490-b709-f068d911ffe6")
+		(property "Reference" "U1"
+			(at 175.26 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ATtiny85-20P"
+			(at 175.26 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 161.29 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf"
+			(at 161.29 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 161.29 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "caba6566-cf95-4214-a3c9-526d090be77e")
+		)
+		(pin "2"
+			(uuid "4eb2cc6f-6e42-456f-b8e9-97fb2083e235")
+		)
+		(pin "3"
+			(uuid "16df3c24-058f-4f67-8a24-a2307936f2a1")
+		)
+		(pin "4"
+			(uuid "72b842de-2689-4b93-9227-b66453191083")
+		)
+		(pin "5"
+			(uuid "b3a03942-44df-4063-a6bc-fb88f6042d3d")
+		)
+		(pin "6"
+			(uuid "c7553e8c-9566-4ea6-b3d8-184d82f54968")
+		)
+		(pin "7"
+			(uuid "c8ffdd0b-41aa-458d-bb42-36c7bcfe4de7")
+		)
+		(pin "8"
+			(uuid "881bed1b-c3d5-4364-a532-021e5846d31e")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:LED-RESCUE-airplane-keychain")
+		(at 55.88 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "701a185b-679b-421d-827f-e41eca39b14f")
+		(property "Reference" "D8"
+			(at 55.88 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 55.88 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 55.88 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a4afebdc-3abf-428d-8e2b-43c7a1e5a2a7")
+		)
+		(pin "2"
+			(uuid "49aaf523-c318-476c-8285-3041bd850e56")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:R")
+		(at 74.93 133.35 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76be8d9f-f998-4acb-8428-39fe274d49bc")
+		(property "Reference" "R10"
+			(at 74.93 135.382 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 74.93 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+			(at 74.93 131.572 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "43fc20c6-01b5-4f03-8cbe-437705367248")
+		)
+		(pin "2"
+			(uuid "8208f8ce-4b96-47af-aebf-1902d6c4a308")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "airplane-keychain-rescue:R")
+		(at 74.93 93.98 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ef6d67db-b694-4462-8c6b-b65f0d866784")
+		(property "Reference" "R7"
+			(at 74.93 96.012 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 74.93 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+			(at 74.93 92.202 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1f3ab43f-8c00-4b63-a042-9a289ae459bb")
+		)
+		(pin "2"
+			(uuid "d35d182b-e523-4040-9641-63ba7d35dbcd")
+		)
+		(instances
+			(project "airplane-keychain"
+				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
