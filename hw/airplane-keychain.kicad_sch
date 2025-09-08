@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "6cfc2c66-5048-4a9e-b97d-b82fde315677")
 	(paper "A4")
 	(title_block
@@ -94,53 +94,17 @@
 				)
 			)
 			(symbol "ATtiny85-20P_1_1"
-				(pin bidirectional line
-					(at 15.24 -5.08 180)
+				(pin power_in line
+					(at 0 15.24 270)
 					(length 2.54)
-					(name "~{RESET}/PB5"
+					(name "VCC"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 0 180)
-					(length 2.54)
-					(name "XTAL1/PB3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 15.24 -2.54 180)
-					(length 2.54)
-					(name "XTAL2/PB4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -220,17 +184,53 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 15.24 270)
+				(pin bidirectional line
+					(at 15.24 0 180)
 					(length 2.54)
-					(name "VCC"
+					(name "XTAL1/PB3"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "8"
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -2.54 180)
+					(length 2.54)
+					(name "XTAL2/PB4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -5.08 180)
+					(length 2.54)
+					(name "~{RESET}/PB5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -239,6 +239,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:MountingHole"
 			(pin_names
@@ -321,11 +322,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "airplane-keychain-rescue:Battery_Cell"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -399,7 +405,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0.762) (xy 0 0)
+						(xy 0 1.778) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -411,7 +417,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.778) (xy 0 2.54)
+						(xy 0 0.762) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -484,10 +490,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "airplane-keychain-rescue:CONN_01X03_MALE"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -536,17 +545,6 @@
 			)
 			(symbol "CONN_01X03_MALE_0_1"
 				(rectangle
-					(start -2.54 0.635)
-					(end 2.54 -0.635)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
 					(start -2.54 5.715)
 					(end -2.54 5.715)
 					(stroke
@@ -558,8 +556,8 @@
 					)
 				)
 				(rectangle
-					(start 2.54 -4.445)
-					(end -2.54 -5.715)
+					(start -2.54 0.635)
+					(end 2.54 -0.635)
 					(stroke
 						(width 0)
 						(type solid)
@@ -571,6 +569,17 @@
 				(rectangle
 					(start 2.54 5.715)
 					(end -2.54 4.445)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 2.54 -4.445)
+					(end -2.54 -5.715)
 					(stroke
 						(width 0)
 						(type solid)
@@ -636,6 +645,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "airplane-keychain-rescue:GND"
 			(power)
@@ -706,7 +716,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -723,10 +734,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "airplane-keychain-rescue:LED-RESCUE-airplane-keychain"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -783,18 +797,6 @@
 			(symbol "LED-RESCUE-airplane-keychain_0_1"
 				(polyline
 					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -2.032 -0.635) (xy -3.175 -1.651) (xy -3.048 -1.016)
 					)
 					(stroke
@@ -808,6 +810,18 @@
 				(polyline
 					(pts
 						(xy -1.651 -1.016) (xy -2.794 -2.032) (xy -2.667 -1.397)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -868,9 +882,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "airplane-keychain-rescue:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -980,9 +997,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "airplane-keychain-rescue:SPST"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -1104,11 +1124,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "airplane-keychain-rescue:SW_PUSH"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1214,7 +1239,63 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "Tail"
+		(exclude_from_sim no)
+		(at 60.96 55.88 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "63e2f909-085a-4763-afaf-7ff8c88cede6")
+	)
+	(text "Strobe Lights"
+		(exclude_from_sim no)
+		(at 63.5 99.06 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "83c4cfa1-8063-4843-830c-55e59350cd8f")
+	)
+	(text "Landing/Taxi"
+		(exclude_from_sim no)
+		(at 62.23 114.3 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "c131228a-d920-424c-af57-96a1e0e81a1d")
+	)
+	(text "Optional Tail Header"
+		(exclude_from_sim no)
+		(at 57.15 24.13 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "d4a808fb-d5c7-493b-abb7-11d079f4b260")
+	)
+	(text "Beacon"
+		(exclude_from_sim no)
+		(at 60.96 48.26 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "d55ebcef-ddef-474e-86af-6b919ecabc3f")
 	)
 	(junction
 		(at 40.64 80.01)
@@ -1983,61 +2064,6 @@
 			(type default)
 		)
 		(uuid "ff034ad9-4406-40c7-99d2-9e0d7a21fcc5")
-	)
-	(text "Tail"
-		(exclude_from_sim no)
-		(at 60.96 55.88 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "63e2f909-085a-4763-afaf-7ff8c88cede6")
-	)
-	(text "Strobe Lights"
-		(exclude_from_sim no)
-		(at 63.5 99.06 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "83c4cfa1-8063-4843-830c-55e59350cd8f")
-	)
-	(text "Landing/Taxi"
-		(exclude_from_sim no)
-		(at 62.23 114.3 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "c131228a-d920-424c-af57-96a1e0e81a1d")
-	)
-	(text "Optional Tail Header"
-		(exclude_from_sim no)
-		(at 57.15 24.13 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "d4a808fb-d5c7-493b-abb7-11d079f4b260")
-	)
-	(text "Beacon"
-		(exclude_from_sim no)
-		(at 60.96 48.26 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "d55ebcef-ddef-474e-86af-6b919ecabc3f")
 	)
 	(symbol
 		(lib_id "airplane-keychain-rescue:LED-RESCUE-airplane-keychain")
@@ -3587,4 +3613,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

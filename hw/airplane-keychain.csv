@@ -1,13 +1,10 @@
-"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
-1;"D1";"LED_D5.0mm_FlatTop";1;"LED";;;
-2;"D2,D5,D6";"LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder";3;"LED";;;
-3;"R1,R2,R3,R4";"R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal";4;"100";;;
-4;"R6";"R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal";1;"10k";;;
-5;"SW1";"SW_PUSH_6mm_H5mm";1;"SW_PUSH";;;
-6;"SW2";"SW_DIP_SPSTx01_Slide_6.7x4.1mm_W7.62mm_P2.54mm_LowProfile";1;"SPST";;;
-7;"D3,D4";"LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm_Clear";2;"LED";;;
-8;"D7";"LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm_Clear";1;"LED";;;
-9;"J1";"PinHeader_1x03_P2.54mm_Vertical";1;"CONN_01X03_MALE";;;
-10;"H2,H1";"MountingHole_3.2mm_M3";2;"MountingHole";;;
-11;"U1";"DIP-8_W7.62mm";1;"ATtiny85-20P";;;
-12;"BT1,BT2";"BatteryHolder_Keystone_1058_1x2032";2;"Battery_Cell";;;
+"Reference","Value","Datasheet","Footprint","Qty","DNP"
+"BT1,BT2","Battery_Cell","","Battery:BatteryHolder_Keystone_1058_1x2032","2",""
+"D1,D2,D3,D4,D5,D6,D7","LED","","LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder,LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm_Clear,LED_THT:LED_D5.0mm_FlatTop,LED_THT:LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm_Clear","7",""
+"H1,H2","MountingHole","~","MountingHole:MountingHole_3.2mm_M3","2",""
+"J1","CONN_01X03_MALE","","Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical","1",""
+"R1,R2,R3,R4","100","","Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal","4",""
+"R6","10k","","Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal","1",""
+"SW1","SW_PUSH","","Button_Switch_THT:SW_PUSH_6mm_H5mm","1",""
+"SW2","SPST","","Button_Switch_THT:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W7.62mm_P2.54mm_LowProfile","1",""
+"U1","ATtiny85-20P","http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf","Package_DIP:DIP-8_W7.62mm","1",""
