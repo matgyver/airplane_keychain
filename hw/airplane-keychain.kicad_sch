@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "ISGC Keychain")
-		(date "2025-03-26")
+		(date "2025-09-11")
 		(rev "B")
 		(company "Make to Innovate")
 		(comment 1 "Matthew E. Nelson")
@@ -995,17 +995,6 @@
 		)
 		(uuid "83c4cfa1-8063-4843-830c-55e59350cd8f")
 	)
-	(text "Push Button Stars"
-		(exclude_from_sim no)
-		(at 62.23 114.3 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "c131228a-d920-424c-af57-96a1e0e81a1d")
-	)
 	(text "Fading Stars"
 		(exclude_from_sim no)
 		(at 60.96 48.26 0)
@@ -1816,6 +1805,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vendor PN" "160-1955-ND"
+			(at 55.88 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5a84132f-afd9-4c4f-953f-fe0d987c9acb")
 		)
@@ -1874,6 +1872,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 55.88 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor PN" "160-1955-ND"
 			(at 55.88 59.69 0)
 			(effects
 				(font
@@ -1948,6 +1955,14 @@
 				(hide yes)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 55.88 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "933062c8-b1cc-41ec-9ffe-695c09ffc33e")
 		)
@@ -2012,6 +2027,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 55.88 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2080,6 +2103,14 @@
 				(hide yes)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 55.88 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3e30f9e2-b078-4f2b-846a-4cf89a0b0422")
 		)
@@ -2144,6 +2175,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 55.88 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2212,6 +2251,14 @@
 				(hide yes)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 55.88 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a7e5c7a5-ca00-4401-89db-cedb93843c1f")
 		)
@@ -2276,6 +2323,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 220.98 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2534,6 +2589,14 @@
 				(hide yes)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 74.93 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5c11689e-d072-4653-b960-857e806b19dc")
 		)
@@ -2599,6 +2662,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 74.93 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2668,6 +2739,14 @@
 				(hide yes)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 74.93 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "461ba1f2-b036-4156-8a8f-fe5de41fd16f")
 		)
@@ -2735,6 +2814,14 @@
 				(hide yes)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 74.93 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e738efef-92a7-4adc-ae71-64932deae649")
 		)
@@ -2800,6 +2887,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 74.93 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2871,6 +2966,14 @@
 				(hide yes)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 220.98 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "97506743-6913-40bc-a7c4-0ab3c2942822")
 		)
@@ -2936,6 +3039,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 161.29 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3005,6 +3116,14 @@
 				(hide yes)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 74.93 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6eaced4b-b191-4a59-ad6b-7220374e4697")
 		)
@@ -3069,6 +3188,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 55.88 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3141,6 +3268,14 @@
 				(hide yes)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 40.64 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "airplane-keychain"
 				(path "/6cfc2c66-5048-4a9e-b97d-b82fde315677"
@@ -3200,6 +3335,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 74.93 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3271,6 +3414,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 161.29 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3357,6 +3508,14 @@
 				(hide yes)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 55.88 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a4afebdc-3abf-428d-8e2b-43c7a1e5a2a7")
 		)
@@ -3424,6 +3583,14 @@
 				(hide yes)
 			)
 		)
+		(property "Vendor PN" ""
+			(at 74.93 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "43fc20c6-01b5-4f03-8cbe-437705367248")
 		)
@@ -3489,6 +3656,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Vendor PN" ""
+			(at 74.93 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
