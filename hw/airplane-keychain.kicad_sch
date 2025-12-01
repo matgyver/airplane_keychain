@@ -5,12 +5,11 @@
 	(uuid "6cfc2c66-5048-4a9e-b97d-b82fde315677")
 	(paper "A4")
 	(title_block
-		(title "ISGC Keychain")
-		(date "2025-03-26")
+		(title "M2I Challenge Coin")
+		(date "2025-11-24")
 		(rev "B")
 		(company "Make to Innovate")
 		(comment 1 "Matthew E. Nelson")
-		(comment 2 "ISGC Badge")
 	)
 	(lib_symbols
 		(symbol "MCU_Microchip_ATtiny:ATtiny85-20P"
