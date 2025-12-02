@@ -972,16 +972,15 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Fading Star"
+	(text "Blinky LEDs"
 		(exclude_from_sim no)
-		(at 60.96 55.88 0)
+		(at 66.548 76.2 0)
 		(effects
 			(font
-				(size 1.524 1.524)
+				(size 1.27 1.27)
 			)
-			(justify left bottom)
 		)
-		(uuid "63e2f909-085a-4763-afaf-7ff8c88cede6")
+		(uuid "06c8782c-dff6-4663-a679-66bcd80d4e2b")
 	)
 	(text "Blinky Stars"
 		(exclude_from_sim no)
@@ -994,27 +993,15 @@
 		)
 		(uuid "83c4cfa1-8063-4843-830c-55e59350cd8f")
 	)
-	(text "Push Button Stars"
+	(text "Pulsing LEDs"
 		(exclude_from_sim no)
-		(at 62.23 114.3 0)
+		(at 65.786 55.88 0)
 		(effects
 			(font
-				(size 1.524 1.524)
+				(size 1.27 1.27)
 			)
-			(justify left bottom)
 		)
-		(uuid "c131228a-d920-424c-af57-96a1e0e81a1d")
-	)
-	(text "Fading Stars"
-		(exclude_from_sim no)
-		(at 60.96 48.26 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left bottom)
-		)
-		(uuid "d55ebcef-ddef-474e-86af-6b919ecabc3f")
+		(uuid "b35e0a6f-f102-453d-8b9a-bb5fc66b9d69")
 	)
 	(junction
 		(at 40.64 80.01)
@@ -1565,7 +1552,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "Red"
 			(at 55.88 53.34 0)
 			(effects
 				(font
@@ -1573,7 +1560,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm"
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
 			(at 55.88 50.8 0)
 			(effects
 				(font
@@ -1591,6 +1578,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 55.88 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C49018"
 			(at 55.88 50.8 0)
 			(effects
 				(font
@@ -1631,7 +1627,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "Amber"
 			(at 55.88 62.23 0)
 			(effects
 				(font
@@ -1639,7 +1635,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm"
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
 			(at 55.88 59.69 0)
 			(effects
 				(font
@@ -1657,6 +1653,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 55.88 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5478408"
 			(at 55.88 59.69 0)
 			(effects
 				(font
@@ -1697,7 +1702,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "Red"
 			(at 55.88 73.66 0)
 			(effects
 				(font
@@ -1705,7 +1710,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm"
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
 			(at 55.88 71.12 0)
 			(effects
 				(font
@@ -1723,6 +1728,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 55.88 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C49018"
 			(at 55.88 71.12 0)
 			(effects
 				(font
@@ -1763,7 +1777,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "Red"
 			(at 55.88 82.55 0)
 			(effects
 				(font
@@ -1771,7 +1785,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm"
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
 			(at 55.88 80.01 0)
 			(effects
 				(font
@@ -1789,6 +1803,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 55.88 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C49018"
 			(at 55.88 80.01 0)
 			(effects
 				(font
@@ -1829,7 +1852,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "Amber"
 			(at 55.88 96.52 0)
 			(effects
 				(font
@@ -1837,7 +1860,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm"
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
 			(at 55.88 93.98 0)
 			(effects
 				(font
@@ -1855,6 +1878,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 55.88 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5478408"
 			(at 55.88 93.98 0)
 			(effects
 				(font
@@ -1895,7 +1927,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "Amber"
 			(at 55.88 105.41 0)
 			(effects
 				(font
@@ -1903,7 +1935,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D3.0mm"
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
 			(at 55.88 102.87 0)
 			(effects
 				(font
@@ -1921,6 +1953,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 55.88 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5478408"
 			(at 55.88 102.87 0)
 			(effects
 				(font
@@ -1949,7 +1990,7 @@
 		(at 220.98 87.63 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000058d82980")
@@ -2141,7 +2182,7 @@
 		(at 40.64 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000058d83834")
@@ -2224,7 +2265,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 74.93 49.022 90)
 			(effects
 				(font
@@ -2244,6 +2285,15 @@
 		)
 		(property "Description" ""
 			(at 74.93 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17909"
+			(at 74.93 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2291,7 +2341,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 74.93 57.912 90)
 			(effects
 				(font
@@ -2311,6 +2361,15 @@
 		)
 		(property "Description" ""
 			(at 74.93 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17909"
+			(at 74.93 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2358,7 +2417,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 74.93 69.342 90)
 			(effects
 				(font
@@ -2378,6 +2437,15 @@
 		)
 		(property "Description" ""
 			(at 74.93 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17909"
+			(at 74.93 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2425,7 +2493,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 74.93 78.232 90)
 			(effects
 				(font
@@ -2445,6 +2513,15 @@
 		)
 		(property "Description" ""
 			(at 74.93 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17909"
+			(at 74.93 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2521,6 +2598,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5470546"
+			(at 220.98 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "97506743-6913-40bc-a7c4-0ab3c2942822")
 		)
@@ -2561,7 +2647,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 161.29 99.822 90)
 			(effects
 				(font
@@ -2581,6 +2667,15 @@
 		)
 		(property "Description" ""
 			(at 161.29 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1489"
+			(at 161.29 101.6 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2628,7 +2723,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 74.93 101.092 90)
 			(effects
 				(font
@@ -2648,6 +2743,15 @@
 		)
 		(property "Description" ""
 			(at 74.93 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17909"
+			(at 74.93 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2675,7 +2779,7 @@
 		(at 40.64 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -2739,7 +2843,7 @@
 		(at 161.29 74.93 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -2848,7 +2952,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 74.93 92.202 90)
 			(effects
 				(font
@@ -2868,6 +2972,15 @@
 		)
 		(property "Description" ""
 			(at 74.93 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17909"
+			(at 74.93 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
