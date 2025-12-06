@@ -2873,7 +2873,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 74.93 49.022 90)
 			(effects
 				(font
@@ -2940,7 +2940,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 74.93 57.912 90)
 			(effects
 				(font
@@ -3007,7 +3007,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 74.93 69.342 90)
 			(effects
 				(font
@@ -3074,7 +3074,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 74.93 78.232 90)
 			(effects
 				(font
@@ -3349,7 +3349,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 161.29 99.822 90)
 			(effects
 				(font
