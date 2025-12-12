@@ -1,0 +1,14 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"BT1, BT2",BatteryHolder_Keystone_1058_1x2032,2,Battery_Cell,C5470546
+D1,LED_D5.0mm_FlatTop,1,Red,C87271
+"D2, D5, D6",1206,3,White,C375462
+D3,LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm_Clear,1,Green,C331028
+D4,LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm_Clear,1,Red,C87271
+D7,LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm_Clear,1,White,C99695
+"H1, H2",MountingHole_3.2mm_M3,2,MountingHole,
+J1,PinHeader_1x03_P2.54mm_Vertical,1,CONN_01X03_MALE,
+"R1, R2, R3, R4",1206,4,100,C25348
+R6,1206,1,10k,C1489
+SW1,SW_PUSH_6mm_H5mm,1,SW_PUSH,C93157
+SW2,SW_DIP_SPSTx01_Slide_6.7x4.1mm_W7.62mm_P2.54mm_LowProfile,1,SPST,C3312384
+U1,DIP-8_W7.62mm,1,ATtiny85-20P,C72124
