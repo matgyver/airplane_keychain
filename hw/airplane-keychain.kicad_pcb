@@ -655,7 +655,7 @@
 			(uuid "507f1e28-0948-41fc-ac3b-ec1ddb00ebee")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_DIP_SPSTx01_Slide_9.78x4.72mm_W7.62mm_P2.54mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_DIP_SPSTx01_Slide_9.78x4.72mm_W7.62mm_P2.54mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2508,7 +2508,7 @@
 			(uuid "5aa974df-db09-4ef3-b668-eca2453ff2ec")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-8_W7.62mm.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-8_W7.62mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5409,7 +5409,7 @@
 			(uuid "98b34d56-2c0b-4266-928c-862bf0fdf338")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Battery.3dshapes/BatteryHolder_Keystone_1058_1x2032.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Battery.3dshapes/BatteryHolder_Keystone_1058_1x2032.step"
 			(offset
 				(xyz 0 0 0)
 			)
